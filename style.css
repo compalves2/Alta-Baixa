@@ -138,3 +138,20 @@ p{
     line-height: 30px;
 }
 
+/*ARTIGO 1*/
+.artigo_1{
+    background-color: #FFFFFF;
+    position: absolute;
+    top:0;
+    left:10%;
+}
+
+.artigo_1 h1{
+    position:relative;
+    left:-2px;
+    top:-80px;
+}
+
+.efeito{width: 50%;
+margin-left: auto;
+margin-right: auto;}
