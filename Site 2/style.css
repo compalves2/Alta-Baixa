@@ -739,6 +739,153 @@ animation-fill-mode: forwards;}
     animation-delay: 2s;
     animation-fill-mode: forwards;}
 
+/*Artigo 8*/
+
+#artigo_8{
+    background-color: lightgray;
+    position: absolute;
+    top:0;
+    left:19.8%;
+    height: 100vh;
+    overflow: scroll;
+
+
+}
+
+#artigo_8 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    animation-duration: 3s;
+    animation-name: transicao_8;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_8 p{ color:lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo8;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_8 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_8;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_8 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_8 .efeito h3{
+    color: white;
+    animation-name:texto7_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: center;}
+
+#artigo_8 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_8 .efeito p:last-child{
+    width: 60%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_8 img{width: 110px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+/*Artigo 9*/
+
+#artigo_9{
+    background-color:#b42537;
+    position: absolute;
+    top:0;
+    left:20.4%;
+    height: 100vh;
+    overflow: scroll;
+
+
+}
+
+#artigo_9 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    animation-duration: 3s;
+    animation-name: transicao_9;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_9 p{ color: #b42537;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo6;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_9 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_9;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_9 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_9 .efeito h3{
+    color: #b42537;
+    animation-name:texto6_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: center;}
+
+#artigo_9 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_9 .efeito p:last-child{
+    width: 60%;
+    margin-top: -15px;
+    text-align: start;
+    margin-left: auto;
+
+}
+
+#artigo_9 img{width: 130px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
 
 
 
@@ -769,6 +916,15 @@ animation-fill-mode: forwards;}
 @keyframes texto_artigo7{
     0% {
         color:white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes texto_artigo8{
+    0% {
+        color:lightgray;
     }
     100% {
         color: black;
@@ -854,6 +1010,61 @@ animation-fill-mode: forwards;}
 
     }
 }
+
+
+@keyframes transicao_8{
+    0% {
+        width: 90%;
+    }
+
+    100% {
+        width: 75%;
+        height:50%;
+    }
+}
+
+@keyframes transicao_texto_8{
+    0% {
+        font-size: 7em;
+
+
+    }
+
+
+
+    100% {
+        font-size: 6em;
+
+    }
+}
+
+@keyframes transicao_9{
+    0% {
+        width: 90%;
+    }
+
+    100% {
+        width: 67%;
+        height:30%;
+    }
+}
+
+@keyframes transicao_texto_9{
+    0% {
+        font-size: 7em;
+
+
+    }
+
+
+
+    100% {
+        font-size: 6em;
+
+    }
+}
+
+
 
 @keyframes texto_h3{
     0% {
