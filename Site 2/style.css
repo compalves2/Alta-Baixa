@@ -157,7 +157,7 @@ p{
 
 #artigo_introducao h1{
     position:relative;
-    left:2px;
+    left:5px;
     animation-duration: 3s;
     animation-name: transicao_texto;
     animation-delay: 2s;
@@ -261,6 +261,7 @@ bottom: 0;}
 #artigo_1 .titulo{
     width: 100%;
     height: auto;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
@@ -341,6 +342,7 @@ margin-right: auto;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
@@ -404,6 +406,7 @@ margin-right: auto;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
@@ -470,6 +473,7 @@ margin-right: auto;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
@@ -538,6 +542,7 @@ margin-right: auto;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
@@ -610,6 +615,7 @@ margin-right: auto;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_6;
     animation-delay: 2s;
@@ -683,6 +689,7 @@ animation-fill-mode: forwards;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_7;
     animation-delay: 2s;
@@ -756,6 +763,7 @@ animation-fill-mode: forwards;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_8;
     animation-delay: 2s;
@@ -829,6 +837,7 @@ animation-fill-mode: forwards;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_9;
     animation-delay: 2s;
@@ -904,6 +913,7 @@ animation-fill-mode: forwards;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_10;
     animation-delay: 2s;
@@ -979,6 +989,7 @@ animation-fill-mode: forwards;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_10;
     animation-delay: 2s;
@@ -1053,6 +1064,7 @@ animation-fill-mode: forwards;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_12;
     animation-delay: 2s;
@@ -1111,29 +1123,6 @@ animation-fill-mode: forwards;}
     animation-fill-mode: forwards;}
 
 
-@keyframes transicao_numero13{
-    0% {
-        width: 150px;
-    }
-    100% {
-        width: 190px;
-
-    }
-}
-
-
-
-@keyframes transicao_12{
-    0% {
-        width: 90%;
-    }
-    100% {
-        width: 60%;
-        height:40%;
-    }
-}
-
-
 
 /*Artigo 13*/
 
@@ -1150,6 +1139,7 @@ animation-fill-mode: forwards;}
     width: 100%;
     height: auto;
     margin-top:-7%;
+    margin-left:0.8%;
     animation-duration: 3s;
     animation-name: transicao_12;
     animation-delay: 2s;
@@ -1479,4 +1469,15 @@ animation-fill-mode: forwards;}
     }
 
 }
+
+@keyframes transicao_12{
+    0% {
+        width: 90%;
+    }
+    100% {
+        width: 60%;
+        height:40%;
+    }
+}
+
 
