@@ -46,7 +46,7 @@ p{
     font-size:1.3em;
 }
 li{
-    font-size:1.3em;
+    font-size:1.1em;
 }
 
 
@@ -113,6 +113,9 @@ line-height: 0.2em !important;
 
 .edicao h1{
     margin:0;
+    font-size: 5.5em;
+    margin-left:-0.3em;
+
 }
 
 .side_right{
@@ -253,7 +256,7 @@ bottom: 0;}
 }
 
 .artigo {
-    overflow: hidden !important;
+    overflow: scroll;
     transition: left 1s;
 }
 
