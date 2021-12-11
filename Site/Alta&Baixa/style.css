@@ -1,0 +1,1594 @@
+@font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('data/NHaasGroteskTXPro-Rg.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('data/AcuminVariableConcept.otf') format('truetype');
+}
+
+body{
+    margin:0;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+.grey{
+    background-color: #bfbabf;
+}
+
+h1{
+    font-size: 7em;
+    line-height: 0.9em;
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hovBold:hover{
+    font-weight: bolder;
+}
+
+.hovBold h1:hover{
+    font-weight: bolder;
+}
+
+h3{font-size: 2em;
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: "Acumin Variable Concept";
+}
+
+.sub-side_num p{
+    font-size:1.3em;
+}
+.side_right p{
+    font-size:1.3em;
+}
+li{
+    font-size:1.1em;
+}
+
+
+/*menu*/
+ul{
+    list-style: none;
+    display: flex;
+    font-family: "Acumin Variable Concept";
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    font-weight: bold;
+}
+ul li:first-child{
+    margin-right: 30px;
+}
+
+/*INDEX*/
+main{
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+    margin:0 auto;
+    position: relative;
+}
+
+main img{
+    position:absolute;
+    position: fixed;
+    height: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: -0;
+    pointer-events: none;
+}
+
+.sub-side_num{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-side_num p{
+line-height: 0.2em !important;
+}
+
+.side{
+    display: flex;
+    min-width: 18%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
+
+}
+
+.edicao{
+    display: flex;
+    align-items: flex-end;
+}
+
+.edicao h1{
+    margin:0;
+    font-size: 5.5em;
+    margin-left:0.7em;
+    font-family: "Acumin Variable Concept";
+
+}
+
+.side_right{
+    display: flex;
+    margin-top: 2em;
+    min-width: 62%;
+    justify-content: space-between;
+}
+
+.side_right h1{
+    margin-top:0;
+}
+.side_right p{
+    line-height: 0.2em;
+    margin-top:0;
+}
+
+.hide {
+    color: transparent;
+}
+
+.hide:hover {
+    color: black;
+    transition: color 0.6s ease-in-out;
+}
+
+/*ARTIGO 1*/
+u{
+    text-decoration: none;
+    color:transparent;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+u:hover{
+    color:black;
+}
+
+p{
+    line-height: 30px;
+}
+
+/*ARTIGO 13 Ways Introdução*/
+#artigo_introducao{
+    background-color: #FFFFFF;
+    position: absolute;
+    top:0;
+    left:15%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#artigo_introducao h1{
+    position:relative;
+    left:5px;
+    animation-duration: 3s;
+    animation-name: transicao_texto;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.titulo{width: 100%;
+    height: auto;
+    animation-duration: 3s;
+    animation-name: transicao;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.efeito{width: 65%;
+margin-left: 30%;
+    animation-duration: 3s;
+    animation-name:texto;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.efeito p{
+    color:gray;
+    margin-top: 8%;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name:texto;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.sub-side_num{position: fixed;
+bottom: 15%;}
+
+.edicao{position: fixed;
+bottom: 0;}
+
+@keyframes transicao{
+    0% {
+    width: 100%;
+
+
+    }
+
+
+   100% {
+       width: 70%;
+      height:20%;
+
+   }
+}
+
+@keyframes transicao_texto{
+    0% {
+       font-size: 7em;
+
+
+    }
+
+
+    100% {
+       font-size: 5em;
+
+    }
+}
+
+@keyframes texto{
+    0% {
+        color:gray;
+
+
+    }
+
+
+    100% {
+       color: black;
+
+    }
+}
+
+.artigo {
+    overflow: scroll;
+    transition: left 1s;
+}
+
+.close {
+    left: 100% !important;
+}
+
+/*ARTIGO 1*/
+
+#artigo_1{
+    background-color: lightgray;
+    position: absolute;
+    top:0;
+    left:15.5%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#artigo_1 .titulo{
+    width: 100%;
+    height: auto;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_1 p{ color: lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10%;}
+
+#artigo_1 .titulo h1{
+    font-size: 9em;
+    animation-duration: 3s;
+    animation-name:transicao_texto_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.efeito h3
+{    color:lightgray;
+    animation-duration: 3s;
+  animation-name: texto_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+margin-bottom: 5%;}
+
+.titulo_numero{display: flex;
+justify-content: space-between;}
+
+.titulo_numero img{width: 80px;
+margin-right: 4%;
+    animation-name: transicao_numero;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_1 .efeito{
+    margin-top: -10%;
+width: 80%;
+margin-left: auto;
+margin-right: auto;}
+
+#artigo_1 .efeito p:first-child{
+    width: 70%;
+    text-align: end;
+    margin-left: auto;
+
+}
+
+#artigo_1 .efeito p:last-child{
+    width: 60%;
+}
+
+/*Artigo 2*/
+
+
+#artigo_2{
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:16.2%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_2 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_2 p{ color: lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10%;}
+
+#artigo_2 .titulo h1{
+    font-size: 9em;
+    animation-duration: 3s;
+    animation-name:transicao_texto_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_2 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_2 .efeito p:first-child{
+    width: 70%;
+    text-align: end;
+    margin-left: auto;
+
+}
+
+#artigo_2 .efeito p:last-child{
+    width: 60%;
+
+}
+
+#artigo_2 img{width: 150px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+/*Artigo 3*/
+
+
+#artigo_3{
+    background-color:#b42537;
+    position: absolute;
+    top:0;
+    left:16.8%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#artigo_3 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_3 p{ color: lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10%;}
+
+#artigo_3 .titulo h1{
+    font-size: 9em;
+    animation-duration: 3s;
+    animation-name:transicao_texto_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_3 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_2 .efeito p:first-child{
+    width: 70%;
+    text-align: end;
+    margin-left: auto;
+
+}
+
+#artigo_3 .efeito p:last-child{
+    width: 60%;
+    text-align: start;
+    margin-left: auto;
+
+}
+
+#artigo_3 img{width: 150px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+/*Artigo 4*/
+
+#artigo_4{
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:17.4%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_4 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_4 p{ color: lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10%;}
+
+#artigo_4 .titulo h1{
+    font-size: 9em;
+    animation-duration: 3s;
+    animation-name:transicao_texto_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_4 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_4 .efeito h3{text-align: center;}
+
+#artigo_4 .efeito p:first-child{
+    width: 70%;
+    text-align: end;
+    margin-left: auto;
+
+}
+
+#artigo_4 .efeito p:last-child{
+    width: 60%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_4 img{width: 110px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+/*Artigo 5*/
+
+#artigo_5{
+    background-color: lightgray;
+    position: absolute;
+    top:0;
+    left:18%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_5 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_5 p{ color: lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10%;}
+
+#artigo_5 .titulo h1{
+    font-size: 9em;
+    animation-duration: 3s;
+    animation-name:transicao_texto_2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_5 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_5 .efeito h3{
+
+    text-align: end;}
+
+#artigo_5 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_5 .efeito p:last-child{
+    width: 60%;
+    text-align: end;
+    margin-left: auto;
+
+}
+
+#artigo_5 img{width: 110px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+
+/*Artigo 6*/
+
+#artigo_6{
+
+    background-color: #b42537;
+    position: absolute;
+    top:0;
+    left:18.6%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_6 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_6;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_6 p{ color: #b42537;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo6;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10%;}
+
+#artigo_6 .titulo h1{
+    font-size: 9em;
+    animation-duration: 3s;
+    animation-name:transicao_texto_6;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_6 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_6 .efeito h3{text-align: end;
+    color: #b42537;
+animation-name: texto6_h3;
+animation-delay: 2s;
+animation-fill-mode: forwards;}
+
+#artigo_6 .efeito p:first-child{
+    width: 70%;
+    text-align: end;
+    margin-left: auto;
+
+}
+
+#artigo_6 .efeito p:last-child{
+    width: 60%;
+    text-align: start;
+    margin-right: auto;
+
+
+}
+
+#artigo_6 img{width: 130px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+/*Artigo 7*/
+
+#artigo_7{
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:19.2%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_7 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_7;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_7 p{ color: white;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo7;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 10%;}
+
+#artigo_7 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_7;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_7 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_7 .efeito h3{
+    color: white;
+    animation-name:texto7_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: center;}
+
+#artigo_7 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_7 .efeito p:last-child{
+    width: 60%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_7 img{width: 110px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+/*Artigo 8*/
+
+#artigo_8{
+    background-color: lightgray;
+    position: absolute;
+    top:0;
+    left:19.8%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_8 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_8;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_8 p{ color:lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo8;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_8 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_8;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_8 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_8 .efeito h3{
+    color: white;
+    animation-name:texto7_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: center;}
+
+#artigo_8 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_8 .efeito p:last-child{
+    width: 60%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_8 img{width: 110px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+/*Artigo 9*/
+
+#artigo_9{
+    background-color:#b42537;
+    position: absolute;
+    top:0;
+    left:20.4%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_9 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_9;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_9 p{ color: #b42537;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo6;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_9 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_9;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_9 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_9 .efeito h3{
+    color: #b42537;
+    animation-name:texto6_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: center;}
+
+#artigo_9 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_9 .efeito p:last-child{
+    width: 60%;
+    margin-top: -15px;
+    text-align: start;
+    margin-left: auto;
+
+}
+
+#artigo_9 img{width: 130px;
+    animation-name: transicao_numero2;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+/*Artigo 10*/
+
+#artigo_10{
+    background-color:white;
+    position: absolute;
+    top:0;
+    left:21%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_10 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_10;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_10 p{ color: white;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo7;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_10 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_10;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_10 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_10 .efeito h3{
+    color: white;
+    animation-name:texto7_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: center;}
+
+#artigo_10 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_10 .efeito p:last-child{
+    width: 60%;
+    margin-top: -15px;
+    text-align: start;
+    margin-left: auto;
+
+}
+
+#artigo_10 img{width: 170px;
+    animation-name: transicao_numero10;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+/*Artigo 11*/
+
+#artigo_11{
+    background-color:lightgray;
+    position: absolute;
+    top:0;
+    left:21.6%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_11 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_10;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_11 p{ color: lightgray;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo8;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_11 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_10;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_11 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_11 .efeito h3{
+    color: lightgray;
+    animation-name:texto6_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: center;}
+
+#artigo_11 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_11 .efeito p:last-child{
+    width: 60%;
+    margin-top: -15px;
+    text-align: start;
+    margin-left: auto;
+
+}
+
+#artigo_11 img{width:160px;
+    animation-name: transicao_numero12;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+
+/*Artigo 12*/
+
+#artigo_12{
+    background-color:#b42537;
+    position: absolute;
+    top:0;
+    left:22.2%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#artigo_12 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_12;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_12 p{ color: #b42537;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo6;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_12 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_10;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_12 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_12 .efeito h3{
+    color: #b42537;
+    animation-name:texto6_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: end;}
+
+#artigo_12 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_12 .efeito p:last-child{
+    width: 60%;
+    margin-top: -15px;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_12 img{width:160px;
+    animation-name: transicao_numero13;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+
+/*Artigo 13*/
+
+#artigo_13{
+    background-color:white;
+    position: absolute;
+    top:0;
+    left:23%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#artigo_13 .titulo{
+    width: 100%;
+    height: auto;
+    margin-top:-7%;
+    margin-left:0.8%;
+    animation-duration: 3s;
+    animation-name: transicao_12;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_13 p{ color: white;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    animation-duration: 3s;
+    animation-name: texto_artigo7;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    margin-top: 15%;}
+
+#artigo_13 .titulo h1{
+    font-size: 7em;
+    margin-top: 12%;
+    animation-duration: 3s;
+    animation-name:transicao_texto_10;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#artigo_13 .efeito{
+    margin-top: -10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#artigo_13 .efeito h3{
+    color: white;
+    animation-name:texto7_h3;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-align: start;}
+
+#artigo_13 .efeito p:first-child{
+    width: 70%;
+    text-align: start;
+    margin-left: auto;
+
+}
+
+#artigo_13 .efeito p:last-child{
+    width: 60%;
+    margin-top: -15px;
+    text-align: start;
+    margin-right: auto;
+
+}
+
+#artigo_13 img{width:190px;
+    animation-name: transicao_numero13;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;}
+
+
+
+
+
+@keyframes texto_artigo{
+    0% {
+        color:lightgray;
+    }
+    100% {
+        color: black;
+    }
+}
+
+
+@keyframes texto_artigo6{
+    0% {
+        color:#b42537;
+    }
+    100% {
+        color: black;
+    }
+}
+
+
+@keyframes texto_artigo7{
+    0% {
+        color:white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes texto_artigo8{
+    0% {
+        color:lightgray;
+    }
+    100% {
+        color: black;
+    }
+}
+
+
+
+
+@keyframes transicao_2{
+    0% {
+        width: 100%;
+    }
+    100% {
+        height:40%;
+        width: 70%;
+    }
+}
+
+@keyframes transicao_texto_2{
+    0% {
+        font-size: 9em;
+    }
+
+    100% {
+        font-size: 7em;
+    }
+}
+
+
+
+@keyframes transicao_6{
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        height:70%;
+        width: 20%;
+    }
+}
+
+@keyframes transicao_texto_6{
+    0% {
+        font-size: 9em;
+
+
+    }
+
+
+
+    100% {
+        font-size: 7em;
+
+    }
+}
+
+@keyframes transicao_7{
+    0% {
+        width: 90%;
+    }
+
+    100% {
+        height:60%;
+        width: 65%;
+    }
+}
+
+@keyframes transicao_texto_7{
+    0% {
+        font-size: 7em;
+
+
+    }
+
+
+
+    100% {
+        font-size: 6em;
+
+    }
+}
+
+
+@keyframes transicao_8{
+    0% {
+        width: 90%;
+    }
+
+    100% {
+        width: 75%;
+        height:50%;
+    }
+}
+
+@keyframes transicao_texto_8{
+    0% {
+        font-size: 7em;
+
+
+    }
+
+
+
+    100% {
+        font-size: 6em;
+
+    }
+}
+
+@keyframes transicao_9{
+    0% {
+        width: 90%;
+    }
+
+    100% {
+        width: 67%;
+        height:30%;
+    }
+}
+
+@keyframes transicao_texto_9{
+    0% {
+        font-size: 7em;
+
+
+    }
+
+
+
+    100% {
+        font-size: 6em;
+
+    }
+}
+
+
+@keyframes transicao_10{
+    0% {
+        width: 80%;
+    }
+
+    100% {
+        width: 70%;
+        height:20%;
+    }
+}
+
+@keyframes transicao_texto_10{
+    0% {
+        font-size: 7em;
+
+
+    }
+
+
+
+    100% {
+        font-size: 6em;
+
+    }
+}
+
+@keyframes transicao_numero10 {
+
+    0%{width:170px;
+    }
+
+    100%{width:170px;
+
+
+    }
+
+}
+
+
+
+
+@keyframes texto_h3{
+    0% {
+        color:lightgray;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+
+@keyframes texto7_h3{
+    0% {
+        color:white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+
+@keyframes texto6_h3{
+    0% {
+        color:#b42537;
+
+
+    }
+
+
+    100% {
+        color: black;
+
+    }
+}
+
+
+@keyframes transicao_numero {
+
+    0%{width:80px;
+    }
+
+    100%{width:70px;
+
+
+}}
+
+@keyframes transicao_numero2 {
+
+    0%{width:110px;
+    }
+
+    100%{width:130px;
+
+
+    }
+
+}
+
+@keyframes transicao_12{
+    0% {
+        width: 90%;
+    }
+    100% {
+        width: 60%;
+        height:40%;
+    }
+}
+
+
+/*cubo*/
+.container {
+    height: 20px;
+    perspective: 1000px;
+    margin-bottom: 0.3em;
+}
+.cube {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top {
+    transform: rotateX(90deg) translateZ(1px);
+    font-size: 1em;
+}
+
+.front {
+    transform: rotateX(0deg) translateZ(1px);
+    font-size: 1em;
+}
+
+
+@keyframes spinup {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100%{
+        transform: rotateX(-90deg) rotateY(0deg);
+        
+    }
+}
+@keyframes spindown {
+    0% {
+        transform: rotateX(-90deg) rotateY(0deg);
+    }
+
+    100%{
+        transform: rotateX(0deg) rotateY(0deg);
+        
+    }
+}
+
+.rotateup{
+    animation:spinup 0.9s forwards;
+}
+.rotatedown{
+    animation:spindown 0.9s forwards;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    font-family: "Acumin Variable Concept";
+    font-size:1em;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #D4D6D4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #323232;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0a0a0a;
+}
+
