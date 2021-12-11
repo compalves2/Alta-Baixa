@@ -1,12 +1,7 @@
 var side_num = document.getElementsByClassName("pageSelect");
-var closePage = document.getElementById("pageCloseAll");
 var artigos = document.getElementsByClassName("artigo");
 
 var currentPage = -1;
-
-closePage.number = -1;
-
-closePage.addEventListener("click", goPage);
 
 for (var i = 0; i < side_num.length; i++) {
     side_num[i].number = i;
@@ -18,11 +13,18 @@ function goPage() {
     if(currentPage==-1)
         cubeRot();
 
+
     if(this.number==0 && currentPage==0) {
         currentPage = -1;
         cubeRot();
-    } else {
+    }
+
+    else {
         currentPage = this.number;
+        if (currentPage == 14){
+            cubeRot();
+            currentPage = -1;
+        }
     }
     for (var i = 0; i < side_num.length; i++) {
         if (i <= currentPage) {
@@ -35,4 +37,6 @@ function goPage() {
             }
         }
     }
+
+
 }
