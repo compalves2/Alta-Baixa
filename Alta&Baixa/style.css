@@ -1587,7 +1587,7 @@ p{
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 1px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1600,4 +1600,134 @@ p{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #0a0a0a;
+}
+
+#artigo_typeEm{
+    background-color: #FFFFFF;
+    position: absolute;
+    top:0;
+    left:15%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+#artigo_typeEm p{
+    color: black;
+    font-size: 1.3em;
+    line-height: 1.5em;}
+
+#artigo_typeEm #p_um{
+    width: 60%;
+    text-align: start;
+    margin-left: 15px;
+}
+
+#artigo_typeEm #p_dois{
+    width: 60%;
+    text-align: end;
+    margin-left: auto;
+    margin-right: 5%;
+
+}
+
+#artigo_typeEm #p_dois{
+    width: 60%;
+    margin-top: 8%;
+    text-align: start;
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+#artigo_typeEm #p_tres{
+    width: 60%;
+    margin-top: 8%;
+    text-align: start;
+    margin-left: auto;
+    margin-right: 13%;
+}
+.Em_Ex_geral{display: flex;
+margin-top: 10%;}
+
+#Em_Ex_texto{width: 80%;}
+
+#imagens_letras{width: 20%;
+margin-top: 5%;}
+
+#imagens_letras img{
+    width:200px;
+    height: 250px;
+}
+
+#Em_Ex_texto h1{
+    font-size: 6.5em;
+}
+
+#Em_Ex_texto_um{
+    width: 70%;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+#Em_Ex_texto_dois{
+    width: 80%;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+#Em_Ex_texto_flex{display: flex;}
+
+#imagens_letras_2 img{
+    width:200px;
+    height: 250px;
+}
+#Em_Ex_texto_2{width: 80%;}
+
+#imagens_letras_2{width: 20%;
+    margin-top: 5%;}
+
+
+#Em_Ex_texto_2 h1{
+    font-size: 6.5em;
+    margin-left: 2%;
+}
+
+#Em_Ex_texto_um_2{
+    width: 50%;
+    margin-left: 3%;
+}
+#Em_Ex_texto_dois_2{
+    width: 50%;
+    margin-top: 15%;
+}
+
+#positive_negative h1{
+    width: 80%;
+    margin-left: 8%;
+    font-size: 7em;
+}
+
+#positive_negative p{
+    width: 70%;
+    margin-left: 10%;
+}
+
+#positive_negative h1:last-child{
+    margin-top: 15%;
+    width: 70%;
+    margin-left: auto;
+    font-size: 7em;
+}
+
+#positive_negative img{
+    position: absolute;
+    width: 300px;
 }

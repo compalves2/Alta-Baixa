@@ -490,6 +490,117 @@
 <!-- fim do artigo 12-->
 
 
+<!--Inicio do artigo TypeEm-->
+
+<div id="artigo_typeEm">
+
+    <div id="p_um">
+        <p>The introduction of programmatic concepts brought to typography new experiments, concepts,
+            and the possibility to create generative typefaces, capable of adapting to different contexts. </p>
+    </div>
+
+    <div id="p_dois">
+      <p>This work aims to explore these new creative possibilities in the field of type design.
+          Through the implementation of a generative system, we created a typeface that adapts its shape to the sentiments expressed in a text.
+          In this project,we used the emotional values of each sentence of a given text to deform the typographic glyphs to represent those emotional values.
+      </p> </div>
+
+    <div id="p_tres">
+        <p>Additionally, and to enable the user to interact with the system,
+            we implemented an application which receives a text as input and, as output, exports the input text composed with our generative typeface.</p>
+    </div>
+
+
+
+
+
+
+    <div class="Em_Ex_geral">
+    <div id="imagens_letras">
+        <img src="img/Fig1-01.1.png" alt="">
+        <img src="img/Fig1-01.2.png" alt="">
+        <img src="img/Fig1-01.3.png" alt="">
+
+    </div>
+        <div id="Em_Ex_texto">
+            <div>
+                <h1>Emotion Extraction</h1>
+            </div>
+            <div id="Em_Ex_texto_um">
+                <p>To obtain the emotions present in the text, we used an external Java library called Synesketch.
+                    The classification of the emotions of Synesketch is based on Paul Ekman’s research.
+                    From his studies, Ekman defined 6 emotions which could be expressed and detected by facial expressions.
+                    These 6 emotions can also be extracted from the text: happiness, sadness, anger, fear, disgust, and surprise.</p>
+            </div>
+            <div id="Em_Ex_texto_dois">
+                <p>To do so, Synesketch uses a method based on the detection of keywords within the text and the application of heuristic rules from dictionaries based on WordNet, emotions, and common abbreviations.
+                    For every analysed text, Synesketch returns the weight values for the 6 emotions, the valence (positive or negative), and a general weight value.
+                    These weights represent the intensity of an emotion and vary between 0, not intense, and 1, very intense.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="Em_Ex_geral">
+        <div id="Em_Ex_texto_2">
+            <div>
+                <h1>Typeface design workflow</h1>
+            </div>
+            <div id="Em_Ex_texto_flex">
+            <div id="Em_Ex_texto_um_2">
+                <p>To represent the text’s emotion we apply the following workflow:
+                    (i) we divide the text by sentence; (ii) we detect the emotions and valences present in the sentence with the Synesketch library;
+                    (iii) we morph the typographic glyphs used in each word, to represent the corresponding valence or emotion; (iv) we compose the text with the resulting glyphs; and (v)
+                    we generate a typeface which represents the general emotion described in the text. </p>
+            </div>
+            <div id="Em_Ex_texto_dois_2">
+                <p> We opted to analyse each sentence in the text independently
+                    because the same text can express several emotions.
+                    With this, as the emotions change throughout the text,
+                    the typeface adapts and also changes to represent the new emotion value.</p>
+            </div>
+            </div>
+        </div>
+            <div id="imagens_letras_2">
+                <img src="img/Fig1-01.4.png" alt="">
+                <img src="img/Fig1-01.5.png" alt="">
+                <img src="img/Fig1-01.6.png" alt="">
+
+            </div>
+
+    </div>
+
+
+
+    <div id="positive_negative">
+
+        <h1>Positive and </h1>
+        <img src="img/Fig2.4-01.1_original%20cópia.png" alt="">
+        <p>To comprehend how the typographic skeleton could be deformed to represent the emotions present in a text,
+            we opted to use first the valence (positive or negative) and the general weight of the text.
+            The valence takes two possible values, 1 for positive and 0 for negative. The general weight represents the intensity
+            of a certain emotion or valence, ranging from 0, not very intense, to 1, very intense.</p>
+
+        <h1>Negative Valences</h1>
+        <img src="img/Fig3-01.1_original%20cópia.png" alt="">
+
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--Fim do artigo TypeEm-->
+
 
 </body>
 <script src="javaScript/text_holes.js"></script>
