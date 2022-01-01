@@ -1709,25 +1709,55 @@ margin-top: 5%;}
     margin-top: 15%;
 }
 
-#positive_negative h1{
+#positive_negative h1:first-child{
     width: 80%;
-    margin-left: 8%;
+    margin-left: 3%;
     font-size: 7em;
 }
+
+#h2{margin-left: 30%;}
 
 #positive_negative p{
     width: 70%;
     margin-left: 10%;
 }
 
-#positive_negative h1:last-child{
-    margin-top: 15%;
-    width: 70%;
-    margin-left: auto;
-    font-size: 7em;
-}
 
 #positive_negative img{
     position: absolute;
     width: 300px;
+    left: 72%;
+    margin-top:-25%;
 }
+
+
+#positive_negative img:last-child{
+left: -1%;
+margin-top:-35%;
+}
+
+
+#six_emotional{margin-top: 20%;}
+
+#six_emotional h1{
+    font-size: 6em;
+    margin-left: 3%;
+    width: 90%;
+}
+
+h2{
+    font-size: 3em;
+    line-height: 0.9em;
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#six_emotional_flex{display: flex;}
+#six_emotional_esq{width: 50%;
+margin-left: 5%;}
+
+#six_emotional_dir{width: 50%;
+    margin-right: 5%;
+margin-top: 15%;}
