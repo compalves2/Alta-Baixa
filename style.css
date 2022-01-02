@@ -142,7 +142,7 @@ main img{
 .side_right{
     display: flex;
     margin-top: 2em;
-    min-width: 62%;
+    min-width: 65%;
     justify-content: space-between;
 }
 
@@ -152,6 +152,7 @@ main img{
 .side_right p{
     line-height: 0.2em;
     margin-top:0;
+    font-family:Azeret ;
 }
 
 .hide {
@@ -1633,7 +1634,7 @@ p{
     background: #0a0a0a;
 }
 
-#artigo_typeEm{
+#artigo_typeEm {
     background-color: #FFFFFF;
     position: absolute;
     top:0;
@@ -1641,8 +1642,12 @@ p{
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    display: none;
+    top: -100%;
+    transition: top 1s;
+}
 
+#artigo_typeEm.open {
+    top: 0;
 }
 
 #artigo_typeEm p{
@@ -1810,9 +1815,6 @@ margin-top: 15%;}
     margin-left:60%;
 }
 
-.title_13 p{
-    color: #b42537;
-}
 
 .title_13 h1{
     transition: left 1s, transform 1s;

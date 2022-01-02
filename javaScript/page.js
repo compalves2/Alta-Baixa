@@ -10,9 +10,13 @@ for (var i = 0; i < side_num.length; i++) {
 }
 
 function goPage() {
-    if(currentPage==-1)
+    if(currentPage==-1) {
         cubeRot();
+    }
 
+    if(artigotypeEm.classList.contains("open")) {
+        artigotypeEm.classList.remove("open");
+    }
 
     if(this.number==0 && currentPage==0) {
         currentPage = -1;
@@ -21,7 +25,7 @@ function goPage() {
 
     else {
         currentPage = this.number;
-        if (currentPage == 14){
+        if (currentPage == 14) {
             cubeRot();
             currentPage = -1;
         }
@@ -32,11 +36,28 @@ function goPage() {
                 side_num[i].page.classList.remove("close");
             }
         } else {
-            if (!side_num[i].page.classList.contains("close")) {
+            if (i!=side_num.length-1 && !side_num[i].page.classList.contains("close")) {
                 side_num[i].page.classList.add("close");
             }
         }
     }
-
-
 }
+
+var topSection = document.getElementById("topSection");
+var artigotypeEm = document.getElementById("artigo_typeEm");
+
+function topPage() {
+    if(artigotypeEm.classList.contains("open")) {
+        artigotypeEm.classList.remove("open");
+    } else {
+        artigotypeEm.classList.add("open");
+    }
+
+    for (var i = 0; i < side_num.length; i++) {
+            if (i!=side_num.length-1  && !side_num[i].page.classList.contains("close")) {
+                side_num[i].page.classList.add("close");
+            }
+    }
+}
+
+topSection.addEventListener("click", topPage);
