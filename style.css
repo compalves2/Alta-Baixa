@@ -173,7 +173,7 @@ u{
     font-family: "Acumin Variable Black";
 }
 
-u:hover{
+.efeito p:hover u {
     color:black;
 }
 
@@ -197,6 +197,7 @@ p{
     text-transform: uppercase;
     width: 45%;
     margin-left: 50%;
+    font-size: 1.9em;
 }
 
 #intro1_2{
@@ -1823,7 +1824,7 @@ margin-top: 15%;}
 
 .title_13 {
     width: 90%;
-    height: 100vh;
+    height: 70vh;
     margin: 0 auto;
     margin-top: 2em;
     position: relative;
@@ -1841,38 +1842,38 @@ margin-top: 15%;}
 
 #title_13_2 {
     position: absolute;
-    top: 17%;
+    top: 23%;
     left: 0;
 }
 
 #title_13_3 {
     position: absolute;
-    top: 17%;
+    top: 23%;
     transform: translateX(-100%);
     left: 100%;
 }
 
 #title_13_4 {
     position: absolute;
-    top: 34%;
+    top: 46%;
     left: 0;
 }
 
 #title_13_5 {
     position: absolute;
-    top: 51%;
+    top: 23%;
     left: 0;
 }
 
 #title_13_6 {
     position: absolute;
-    top: 51%;
+    top: 23%;
     transform: translateX(-100%);
     left: 100%;
 }
 
 #title_13_7 {
     position: absolute;
-    top: 68%;
+    top: 46%;
     left: 0;
 }
