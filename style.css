@@ -5,17 +5,15 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Acumin Variable Concept';
     src: url('data/AcuminVariableConcept.otf') format('truetype');
-    font-weight: bold;
+    font-weight: normal;
 }
 
-
 @font-face {
-    font-family: 'Acumin Variable Concept';
-    src: url('data/AcuminVariableConcept.otf') format('truetype');
+    font-family: 'Acumin Variable Black';
+    src: url('data/Acumin Pro Black.otf') format('truetype');
     font-weight: normal;
 }
 
@@ -170,8 +168,8 @@ u{
     text-decoration: none;
     color:transparent;
     transition: color 0.3s ease-in-out;
-    font-weight: bold;
     text-transform: uppercase;
+    font-family: "Acumin Variable Black";
 }
 
 u:hover{
@@ -193,6 +191,23 @@ p{
     overflow-x: hidden;
 }
 
+#intro1_1{
+    font-family: "Acumin Variable Black";
+    text-transform: uppercase;
+    width: 45%;
+    margin-left: 50%;
+}
+
+#intro1_2{
+    width: 50%;
+    margin-left: 10%;
+}
+
+#intro1_3{
+    width: 40%;
+    margin-left: 20%;
+}
+
 /*#artigo_introducao h1{
     position:relative;
     left:5px;
@@ -211,14 +226,21 @@ p{
     animation-fill-mode: forwards;
 }
 
+/*
 .efeito{width: 65%;
     margin-left: 30%;
     animation-duration: 3s;
     animation-name:texto;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
+}*/
 
+.efeito p {
+    margin-top: 5%;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+/*
 .efeito p{
     color:gray;
     margin-top: 8%;
@@ -228,7 +250,7 @@ p{
     animation-name:texto;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
+}*/
 
 
 .sub-side_num{position: fixed;
@@ -1785,6 +1807,10 @@ margin-top: 15%;}
     margin: 0 auto;
     margin-top: 2em;
     position: relative;
+}
+
+.title_13 p{
+    line-height: 4px;
 }
 
 #title_13_1 {
