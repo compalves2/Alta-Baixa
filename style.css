@@ -210,6 +210,14 @@ p{
     margin-left: 20%;
 }
 
+#intro1_4{
+    font-family: "Acumin Variable Black";
+    text-transform: uppercase;
+    width: 45%;
+    margin-left: 50%;
+    font-size: 1.9em;
+}
+
 /*#artigo_introducao h1{
     position:relative;
     left:5px;
