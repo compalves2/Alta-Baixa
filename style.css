@@ -198,7 +198,7 @@ p{
     text-transform: uppercase;
     width: 45%;
     margin-left: 50%;
-    font-size: 1.9em;
+    font-size: 1.5vw;
 }
 
 #intro1_2{
@@ -207,16 +207,17 @@ p{
 }
 
 #intro1_3{
-    width: 40%;
+    width: 50%;
     margin-left: 20%;
 }
 
 #intro_1_4{
     font-family: "Acumin Variable Black";
     text-transform: uppercase;
-    margin-left: 50%;
-    font-size: 3em;
+    margin-left: 70%;
+    font-size: 1.9em;
     line-height: 1em;
+    margin-top: 15vh;
 }
 
 /*#artigo_introducao h1{
@@ -248,7 +249,7 @@ p{
 
 .efeito p {
     margin-top: 5%;
-    font-size: 1.3em;
+    font-size: 1.5vw;
     line-height: 1.5em;
 }
 /*
@@ -1662,13 +1663,18 @@ p{
 
 #artigo_typeEm p{
     color: black;
-    font-size: 1.6em;
+    font-size: 1.5vw;
     line-height: 1.5em;}
 
 #artigo_typeEm #p_um{
     width: 45%;
     text-align: start;
     margin-left: 10%;
+}
+
+#p_um a{
+    font-family: "Acumin Variable Black";
+    text-transform: uppercase;
 }
 
 #artigo_typeEm #p_dois{
@@ -1716,12 +1722,6 @@ margin-top: 5%;}
 }
 
 
-
-
-
-
-
-
 #Em_Ex_texto_flex{display: flex;}
 
 #imagens_letras_2 img{
@@ -1748,32 +1748,48 @@ margin-top: 5%;}
     margin-top: 30%;
 }
 
+
+
+.pos_neg{
+    position: relative;
+    z-index: 0;
+    margin-top: 6vh;
+}
+
 #positive_negative h1:first-child{
     width: 80%;
     margin-left: 3%;
+    z-index: 1;
     /*font-size: 6em;*/
 }
 
-#h2{margin-left: 30%;}
+#h2{
+    margin-left: 40%;
+    z-index: 1;
+}
 
 #positive_negative p{
-    width: 70%;
+    width: 60%;
     margin-left: 10%;
+    z-index: 1;
 }
 
 
-#positive_negative img{
+.pos_neg img{
     position: absolute;
-    width: 30vw;
-    z-index: 0;
-    left: 5%;
-    top: 510vh;
+    width: 25vw;
+    z-index: -1;
+
 }
 
+.pos_neg img:first-child{
+    left: 8%;
+    top: 48vh;
+}
 
-#positive_negative img:last-child{
-    left: 5%;
-    top: 510vh;
+.pos_neg img:nth-child(2){
+    left: 60%;
+    top: -6vh;
 }
 
 
@@ -1812,6 +1828,10 @@ margin-top: 15%;}
 }
 .Michael_3 div:nth-child(2){
     margin-left:70%;
+}
+
+.Michael_6{
+    display: flex;
 }
 
 .Michael_6 div:nth-child(2){
