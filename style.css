@@ -1,13 +1,22 @@
 @font-face {
     font-family: 'Neue Haas Grotesk Text Pro';
-    src: url('data/NHaasGroteskTXPro-Rg.ttf') format('truetype');
+    src: url('data/NHaasGroteskTXPro-75Bd.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'Acumin Variable Concept';
     src: url('data/AcuminVariableConcept.otf') format('truetype');
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('data/AcuminVariableConcept.otf') format('truetype');
+    font-weight: normal;
 }
 
 @font-face {
@@ -27,12 +36,11 @@ body{
 }
 
 h1{
-    font-size: 7em;
-    line-height: 0.9em;
     font-family: "Neue Haas Grotesk Text Pro";
-    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05vw;
+    font-size: 8vw;
+    line-height: 7vw;
 }
 
 .hovBold:hover{
@@ -130,7 +138,7 @@ main img{
     font-size: 5.5em;
     margin-left:1em;
     font-family: "Acumin Variable Concept";
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .side_right{
@@ -163,6 +171,7 @@ u{
     color:transparent;
     transition: color 0.3s ease-in-out;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 u:hover{
@@ -184,14 +193,14 @@ p{
     overflow-x: hidden;
 }
 
-#artigo_introducao h1{
+/*#artigo_introducao h1{
     position:relative;
     left:5px;
     animation-duration: 3s;
     animation-name: transicao_texto;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
+}*/
 
 
 .titulo{width: 100%;
@@ -1168,7 +1177,7 @@ p{
     overflow: scroll;
     overflow-x: hidden;
 }
-
+/*
 #artigo_13 .titulo{
     width: 100%;
     height: auto;
@@ -1178,7 +1187,7 @@ p{
     animation-name: transicao_12;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
+}*/
 
 #artigo_13 p{ color: white;
     font-size: 1.3em;
@@ -1189,14 +1198,14 @@ p{
     animation-fill-mode: forwards;
     margin-top: 15%;}
 
-#artigo_13 .titulo h1{
+/*#artigo_13 .titulo h1{
     font-size: 7em;
     margin-top: 12%;
     animation-duration: 3s;
     animation-name:transicao_texto_10;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
+}*/
 
 #artigo_13 .efeito{
     margin-top: -10%;
@@ -1610,6 +1619,7 @@ p{
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    display: none;
 
 }
 
@@ -1761,3 +1771,62 @@ margin-left: 5%;}
 #six_emotional_dir{width: 50%;
     margin-right: 5%;
 margin-top: 15%;}
+
+
+/*titulo 13 ways*/
+.title_13 h1{
+    transition: left 1s, transform 1s;
+    margin: 0;
+}
+
+.title_13 {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 2em;
+    position: relative;
+}
+
+#title_13_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#title_13_2 {
+    position: absolute;
+    top: 17%;
+    left: 0;
+}
+
+#title_13_3 {
+    position: absolute;
+    top: 17%;
+    transform: translateX(-100%);
+    left: 100%;
+}
+
+#title_13_4 {
+    position: absolute;
+    top: 34%;
+    left: 0;
+}
+
+#title_13_5 {
+    position: absolute;
+    top: 51%;
+    left: 0;
+}
+
+#title_13_6 {
+    position: absolute;
+    top: 51%;
+    transform: translateX(-100%);
+    left: 100%;
+}
+
+#title_13_7 {
+    position: absolute;
+    top: 68%;
+    left: 0;
+}
