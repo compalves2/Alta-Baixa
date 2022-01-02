@@ -38,7 +38,8 @@ h1{
     text-transform: uppercase;
     letter-spacing: 0.05vw;
     font-size: 8vw;
-    line-height: 7vw;
+    margin:0;
+    line-height: 8vw;
 }
 
 .hovBold:hover{
@@ -210,12 +211,12 @@ p{
     margin-left: 20%;
 }
 
-#intro1_4{
+#intro_1_4{
     font-family: "Acumin Variable Black";
     text-transform: uppercase;
-    width: 45%;
     margin-left: 50%;
-    font-size: 1.9em;
+    font-size: 3em;
+    line-height: 1em;
 }
 
 /*#artigo_introducao h1{
@@ -1661,29 +1662,21 @@ p{
 
 #artigo_typeEm p{
     color: black;
-    font-size: 1.3em;
+    font-size: 1.6em;
     line-height: 1.5em;}
 
 #artigo_typeEm #p_um{
-    width: 60%;
+    width: 45%;
     text-align: start;
-    margin-left: 15px;
+    margin-left: 10%;
 }
 
 #artigo_typeEm #p_dois{
-    width: 60%;
-    text-align: end;
-    margin-left: auto;
-    margin-right: 5%;
-
-}
-
-#artigo_typeEm #p_dois{
-    width: 60%;
+    width: 45%;
     margin-top: 8%;
     text-align: start;
     margin-left: auto;
-    margin-right: 3%;
+    margin-right: 10%;
 }
 
 #artigo_typeEm #p_tres{
@@ -1707,11 +1700,11 @@ margin-top: 5%;}
 }
 
 #Em_Ex_texto h1{
-    font-size: 6.5em;
+    /*font-size: 6em;*/
 }
 
 #Em_Ex_texto_um{
-    width: 70%;
+    width: 45%;
     margin-right: auto;
     margin-left: 5%;
 }
@@ -1742,7 +1735,7 @@ margin-top: 5%;}
 
 
 #Em_Ex_texto_2 h1{
-    font-size: 6.5em;
+    /*font-size: 6em;*/
     margin-left: 2%;
 }
 
@@ -1752,13 +1745,13 @@ margin-top: 5%;}
 }
 #Em_Ex_texto_dois_2{
     width: 50%;
-    margin-top: 15%;
+    margin-top: 30%;
 }
 
 #positive_negative h1:first-child{
     width: 80%;
     margin-left: 3%;
-    font-size: 7em;
+    /*font-size: 6em;*/
 }
 
 #h2{margin-left: 30%;}
@@ -1771,30 +1764,31 @@ margin-top: 5%;}
 
 #positive_negative img{
     position: absolute;
-    width: 300px;
-    left: 72%;
-    margin-top:-25%;
+    width: 30vw;
+    z-index: 0;
+    left: 5%;
+    top: 510vh;
 }
 
 
 #positive_negative img:last-child{
-left: -1%;
-margin-top:-35%;
+    left: 5%;
+    top: 510vh;
 }
 
 
 #six_emotional{margin-top: 20%;}
 
 #six_emotional h1{
-    font-size: 6em;
+    /*font-size: 6em;*/
     margin-left: 3%;
     width: 90%;
 }
 
 h2{
     font-size: 3em;
-    line-height: 0.9em;
-    font-family: "Neue Haas Grotesk Text Pro";
+    line-height: 1.2em;
+    font-family: "Acumin Variable Black";
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1825,20 +1819,38 @@ margin-top: 15%;}
 }
 
 
-.title_13 h1{
+.titulo_artigo h1{
     transition: left 1s, transform 1s;
     margin: 0;
 }
 
-.title_13 {
+.titulo_artigo {
     width: 90%;
     height: 70vh;
     margin: 0 auto;
     margin-top: 2em;
     position: relative;
 }
+.titulo_artigo_2 {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.titulo_artigo_2 div{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo_artigo_2 h1{
+margin: 0;
+    line-height: 8vw;
+}
 
-.title_13 p{
+.div_end{
+    justify-content: flex-end !important;
+}
+
+.titulo_artigo p{
     line-height: 4px;
 }
 
