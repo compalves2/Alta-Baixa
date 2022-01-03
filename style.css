@@ -23,85 +23,89 @@
 }
 
 
-body{
-    margin:0;
+body {
+    margin: 0;
     overscroll-behavior: none;
     overflow-x: hidden;
 }
 
-.grey{
+.grey {
     background-color: #bfbabf;
 }
 
-h1{
+h1 {
     font-family: "Neue Haas Grotesk Text Pro";
     text-transform: uppercase;
     letter-spacing: 0.05vw;
     font-size: 8vw;
-    margin:0;
+    margin: 0;
     line-height: 8vw;
 }
 
-.hovBold:hover{
+.hovBold:hover {
     font-weight: bolder;
 }
 
-.hovBold h1:hover{
+.hovBold h1:hover {
     font-weight: bolder;
 }
 
-h3{font-size: 2em;
+h3 {
+    font-size: 2em;
     font-family: "Neue Haas Grotesk Text Pro";
     font-weight: bold;
     text-transform: uppercase;
 }
 
-p{
+p {
     font-family: "Acumin Variable Concept";
 }
 
-.sub-side_num p{
-    font-size:1.3em;
+.sub-side_num p {
+    font-size: 1.2em;
 }
-.side_right p{
-    font-size:1.3em;
+
+.side_right p {
+    font-size: 1.3em;
 }
-li{
-    font-size:1.1em;
+
+li {
+    font-size: 1.1em;
 }
 
 
 /*menu*/
-ul{
+ul {
     list-style: none;
     display: flex;
     font-family: "Azeret";
-    padding:0;
+    padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000000;
 }
 
-a:hover{
+a:hover {
     font-weight: bold;
 }
-ul li:first-child{
+
+ul li:first-child {
     margin-right: 30px;
 }
 
 /*INDEX*/
-main{
+main {
     display: flex;
     justify-content: space-between;
-    width:95%;
-    margin:0 auto;
+    width: 95%;
+    margin: 0 auto;
     position: relative;
 }
 
-main img{
-    position:absolute;
+main img {
+    position: absolute;
     position: fixed;
     height: 50vh;
     transform: translate(-50%, -50%);
@@ -109,16 +113,16 @@ main img{
     pointer-events: none;
 }
 
-.sub-side_num{
+.sub-side_num {
     display: flex;
     justify-content: space-between;
 }
 
-.sub-side_num p{
+.sub-side_num p {
     line-height: 0.2em !important;
 }
 
-.side{
+.side {
     display: flex;
     min-width: 18%;
     flex-direction: column;
@@ -127,33 +131,34 @@ main img{
 
 }
 
-.edicao{
+.edicao {
     display: flex;
     align-items: flex-end;
 }
 
-.edicao h1{
-    margin:0;
+.edicao h1 {
+    margin: 0;
     font-size: 5.5em;
-    margin-left:1em;
+    margin-left: 1em;
     font-family: "Acumin Variable Concept";
     margin-bottom: 10px;
 }
 
-.side_right{
+.side_right {
     display: flex;
     margin-top: 2em;
     min-width: 65%;
     justify-content: space-between;
 }
 
-.side_right h1{
-    margin-top:0;
+.side_right h1 {
+    margin-top: 0;
 }
-.side_right p{
+
+.side_right p {
     line-height: 0.2em;
-    margin-top:0;
-    font-family:Azeret ;
+    margin-top: 0;
+    font-family: Azeret;
 }
 
 .hide {
@@ -166,34 +171,34 @@ main img{
 }
 
 /*ARTIGO 1*/
-u{
+u {
     text-decoration: none;
-    color:transparent;
+    color: transparent;
     transition: color 0.3s ease-in-out;
     text-transform: uppercase;
     font-family: "Acumin Variable Black";
 }
 
 .efeito p:hover u {
-    color:black;
+    color: black;
 }
 
-p{
+p {
     line-height: 30px;
 }
 
 /*ARTIGO 13 Ways Introdução*/
-#artigo_introducao{
+#artigo_introducao {
     background-color: #FFFFFF;
     position: absolute;
-    top:0;
-    left:15%;
+    top: 0;
+    left: 15%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-#intro1_1{
+#intro1_1 {
     font-family: "Acumin Variable Black";
     text-transform: uppercase;
     width: 45%;
@@ -201,17 +206,17 @@ p{
     font-size: 1.5vw;
 }
 
-#intro1_2{
+#intro1_2 {
     width: 50%;
     margin-left: 10%;
 }
 
-#intro1_3{
+#intro1_3 {
     width: 50%;
     margin-left: 20%;
 }
 
-#intro_1_4{
+#intro_1_4 {
     font-family: "Acumin Variable Black";
     text-transform: uppercase;
     margin-left: 70%;
@@ -230,7 +235,8 @@ p{
 }*/
 
 
-.titulo{width: 100%;
+.titulo {
+    width: 100%;
     height: auto;
     animation-duration: 3s;
     animation-name: transicao;
@@ -252,6 +258,7 @@ p{
     font-size: 1.5vw;
     line-height: 1.5em;
 }
+
 /*
 .efeito p{
     color:gray;
@@ -265,13 +272,17 @@ p{
 }*/
 
 
-.sub-side_num{position: fixed;
-    bottom: 15%;}
+.sub-side_num {
+    position: fixed;
+    bottom: 15%;
+}
 
-.edicao{position: fixed;
-    bottom: 0;}
+.edicao {
+    position: fixed;
+    bottom: 0;
+}
 
-@keyframes transicao{
+@keyframes transicao {
     0% {
         width: 100%;
 
@@ -281,12 +292,12 @@ p{
 
     100% {
         width: 70%;
-        height:20%;
+        height: 20%;
 
     }
 }
 
-@keyframes transicao_texto{
+@keyframes transicao_texto {
     0% {
         font-size: 7em;
 
@@ -300,9 +311,9 @@ p{
     }
 }
 
-@keyframes texto{
+@keyframes texto {
     0% {
-        color:gray;
+        color: gray;
 
 
     }
@@ -325,415 +336,449 @@ p{
 
 /*ARTIGO 1*/
 
-#artigo_1{
+#artigo_1 {
     background-color: lightgray;
     position: absolute;
-    top:0;
-    left:15.5%;
+    top: 0;
+    left: 15.5%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-#artigo_1 .titulo{
+#artigo_1 .titulo {
     width: 100%;
     height: auto;
-    margin-left:0.8%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_1 p{ color: lightgray;
+#artigo_1 p {
+    color: lightgray;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo1;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+}
 
-#artigo_1 .titulo h1{
+#artigo_1 .titulo h1 {
     font-size: 9em;
     animation-duration: 3s;
-    animation-name:transicao_texto_2;
+    animation-name: transicao_texto_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-.efeito h3
-{    color:lightgray;
+.efeito h3 {
+    color: lightgray;
     animation-duration: 3s;
     animation-name: texto_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
     margin-top: 5%;
-    margin-bottom: 5%;}
+    margin-bottom: 5%;
+}
 
-.titulo_numero{display: flex;
-    justify-content: space-between;}
+.titulo_numero {
+    display: flex;
+    justify-content: space-between;
+}
 
-.titulo_numero img{width: 80px;
+.titulo_numero img {
+    width: 80px;
     margin-right: 4%;
     animation-name: transicao_numero;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_1 .efeito{
+#artigo_1 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_1 .efeito p:first-child{
+#artigo_1 .efeito p:first-child {
     width: 70%;
     text-align: end;
     margin-left: auto;
 
 }
 
-#artigo_1 .efeito p:last-child{
+#artigo_1 .efeito p:last-child {
     width: 60%;
 }
 
 /*Artigo 2*/
 
 
-#artigo_2{
+#artigo_2 {
     background-color: white;
     position: absolute;
-    top:0;
-    left:16.2%;
+    top: 0;
+    left: 16.2%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_2 .titulo{
+#artigo_2 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_2 p{ color: lightgray;
+#artigo_2 p {
+    color: lightgray;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+}
 
-#artigo_2 .titulo h1{
+#artigo_2 .titulo h1 {
     font-size: 9em;
     animation-duration: 3s;
-    animation-name:transicao_texto_2;
+    animation-name: transicao_texto_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_2 .efeito{
+#artigo_2 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_2 .efeito p:first-child{
+#artigo_2 .efeito p:first-child {
     width: 70%;
     text-align: end;
     margin-left: auto;
 
 }
 
-#artigo_2 .efeito p:last-child{
+#artigo_2 .efeito p:last-child {
     width: 60%;
 
 }
 
-#artigo_2 img{width: 150px;
+#artigo_2 img {
+    width: 150px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 3*/
 
 
-#artigo_3{
-    background-color:#b42537;
+#artigo_3 {
+    background-color: #b42537;
     position: absolute;
-    top:0;
-    left:16.8%;
+    top: 0;
+    left: 16.8%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-#artigo_3 .titulo{
+#artigo_3 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_3 p{ color: lightgray;
+#artigo_3 p {
+    color: lightgray;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+}
 
-#artigo_3 .titulo h1{
+#artigo_3 .titulo h1 {
     font-size: 9em;
     animation-duration: 3s;
-    animation-name:transicao_texto_2;
+    animation-name: transicao_texto_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_3 .efeito{
+#artigo_3 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_2 .efeito p:first-child{
+#artigo_2 .efeito p:first-child {
     width: 70%;
     text-align: end;
     margin-left: auto;
 
 }
 
-#artigo_3 .efeito p:last-child{
+#artigo_3 .efeito p:last-child {
     width: 60%;
     text-align: start;
     margin-left: auto;
 
 }
 
-#artigo_3 img{width: 150px;
+#artigo_3 img {
+    width: 150px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 4*/
 
-#artigo_4{
+#artigo_4 {
     background-color: white;
     position: absolute;
-    top:0;
-    left:17.4%;
+    top: 0;
+    left: 17.4%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_4 .titulo{
+#artigo_4 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_4 p{ color: lightgray;
+#artigo_4 p {
+    color: lightgray;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+}
 
-#artigo_4 .titulo h1{
+#artigo_4 .titulo h1 {
     font-size: 9em;
     animation-duration: 3s;
-    animation-name:transicao_texto_2;
+    animation-name: transicao_texto_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_4 .efeito{
+#artigo_4 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_4 .efeito h3{text-align: center;}
+#artigo_4 .efeito h3 {
+    text-align: center;
+}
 
-#artigo_4 .efeito p:first-child{
+#artigo_4 .efeito p:first-child {
     width: 70%;
     text-align: end;
     margin-left: auto;
 
 }
 
-#artigo_4 .efeito p:last-child{
+#artigo_4 .efeito p:last-child {
     width: 60%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_4 img{width: 110px;
+#artigo_4 img {
+    width: 110px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 5*/
 
-#artigo_5{
+#artigo_5 {
     background-color: lightgray;
     position: absolute;
-    top:0;
-    left:18%;
+    top: 0;
+    left: 18%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_5 .titulo{
+#artigo_5 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_5 p{ color: lightgray;
+#artigo_5 p {
+    color: lightgray;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+}
 
-#artigo_5 .titulo h1{
+#artigo_5 .titulo h1 {
     font-size: 9em;
     animation-duration: 3s;
-    animation-name:transicao_texto_2;
+    animation-name: transicao_texto_2;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_5 .efeito{
+#artigo_5 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_5 .efeito h3{
+#artigo_5 .efeito h3 {
 
-    text-align: end;}
+    text-align: end;
+}
 
-#artigo_5 .efeito p:first-child{
+#artigo_5 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_5 .efeito p:last-child{
+#artigo_5 .efeito p:last-child {
     width: 60%;
     text-align: end;
     margin-left: auto;
 
 }
 
-#artigo_5 img{width: 110px;
+#artigo_5 img {
+    width: 110px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
-
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 6*/
 
-#artigo_6{
+#artigo_6 {
 
     background-color: #b42537;
     position: absolute;
-    top:0;
-    left:18.6%;
+    top: 0;
+    left: 18.6%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_6 .titulo{
+#artigo_6 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_6;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_6 p{ color: #b42537;
+#artigo_6 p {
+    color: #b42537;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo6;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+}
 
-#artigo_6 .titulo h1{
+#artigo_6 .titulo h1 {
     font-size: 9em;
     animation-duration: 3s;
-    animation-name:transicao_texto_6;
+    animation-name: transicao_texto_6;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_6 .efeito{
+#artigo_6 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_6 .efeito h3{text-align: end;
+#artigo_6 .efeito h3 {
+    text-align: end;
     color: #b42537;
     animation-name: texto6_h3;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
-#artigo_6 .efeito p:first-child{
+#artigo_6 .efeito p:first-child {
     width: 70%;
     text-align: end;
     margin-left: auto;
 
 }
 
-#artigo_6 .efeito p:last-child{
+#artigo_6 .efeito p:last-child {
     width: 60%;
     text-align: start;
     margin-right: auto;
@@ -741,223 +786,241 @@ p{
 
 }
 
-#artigo_6 img{width: 130px;
+#artigo_6 img {
+    width: 130px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 7*/
 
-#artigo_7{
+#artigo_7 {
     background-color: white;
     position: absolute;
-    top:0;
-    left:19.2%;
+    top: 0;
+    left: 19.2%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_7 .titulo{
+#artigo_7 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_7;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_7 p{ color: white;
+#artigo_7 p {
+    color: white;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo7;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+}
 
-#artigo_7 .titulo h1{
+#artigo_7 .titulo h1 {
     font-size: 7em;
     margin-top: 12%;
     animation-duration: 3s;
-    animation-name:transicao_texto_7;
+    animation-name: transicao_texto_7;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_7 .efeito{
+#artigo_7 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_7 .efeito h3{
+#artigo_7 .efeito h3 {
     color: white;
-    animation-name:texto7_h3;
+    animation-name: texto7_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-align: center;}
+    text-align: center;
+}
 
-#artigo_7 .efeito p:first-child{
+#artigo_7 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_7 .efeito p:last-child{
+#artigo_7 .efeito p:last-child {
     width: 60%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_7 img{width: 110px;
+#artigo_7 img {
+    width: 110px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 /*Artigo 8*/
 
-#artigo_8{
+#artigo_8 {
     background-color: lightgray;
     position: absolute;
-    top:0;
-    left:19.8%;
+    top: 0;
+    left: 19.8%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_8 .titulo{
+#artigo_8 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_8;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_8 p{ color:lightgray;
+#artigo_8 p {
+    color: lightgray;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo8;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-top: 15%;}
+    margin-top: 15%;
+}
 
-#artigo_8 .titulo h1{
+#artigo_8 .titulo h1 {
     font-size: 7em;
     margin-top: 12%;
     animation-duration: 3s;
-    animation-name:transicao_texto_8;
+    animation-name: transicao_texto_8;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_8 .efeito{
+#artigo_8 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_8 .efeito h3{
+#artigo_8 .efeito h3 {
     color: white;
-    animation-name:texto7_h3;
+    animation-name: texto7_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-align: center;}
+    text-align: center;
+}
 
-#artigo_8 .efeito p:first-child{
+#artigo_8 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_8 .efeito p:last-child{
+#artigo_8 .efeito p:last-child {
     width: 60%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_8 img{width: 110px;
+#artigo_8 img {
+    width: 110px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 /*Artigo 9*/
 
-#artigo_9{
-    background-color:#b42537;
+#artigo_9 {
+    background-color: #b42537;
     position: absolute;
-    top:0;
-    left:20.4%;
+    top: 0;
+    left: 20.4%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_9 .titulo{
+#artigo_9 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_9;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_9 p{ color: #b42537;
+#artigo_9 p {
+    color: #b42537;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo6;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-top: 15%;}
+    margin-top: 15%;
+}
 
-#artigo_9 .titulo h1{
+#artigo_9 .titulo h1 {
     font-size: 7em;
     margin-top: 12%;
     animation-duration: 3s;
-    animation-name:transicao_texto_9;
+    animation-name: transicao_texto_9;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_9 .efeito{
+#artigo_9 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_9 .efeito h3{
+#artigo_9 .efeito h3 {
     color: #b42537;
-    animation-name:texto6_h3;
+    animation-name: texto6_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-align: center;}
+    text-align: center;
+}
 
-#artigo_9 .efeito p:first-child{
+#artigo_9 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_9 .efeito p:last-child{
+#artigo_9 .efeito p:last-child {
     width: 60%;
     margin-top: -15px;
     text-align: start;
@@ -965,75 +1028,81 @@ p{
 
 }
 
-#artigo_9 img{width: 130px;
+#artigo_9 img {
+    width: 130px;
     animation-name: transicao_numero2;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 10*/
 
-#artigo_10{
-    background-color:white;
+#artigo_10 {
+    background-color: white;
     position: absolute;
-    top:0;
-    left:21%;
+    top: 0;
+    left: 21%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_10 .titulo{
+#artigo_10 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_10;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_10 p{ color: white;
+#artigo_10 p {
+    color: white;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo7;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-top: 15%;}
+    margin-top: 15%;
+}
 
-#artigo_10 .titulo h1{
+#artigo_10 .titulo h1 {
     font-size: 7em;
     margin-top: 12%;
     animation-duration: 3s;
-    animation-name:transicao_texto_10;
+    animation-name: transicao_texto_10;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_10 .efeito{
+#artigo_10 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_10 .efeito h3{
+#artigo_10 .efeito h3 {
     color: white;
-    animation-name:texto7_h3;
+    animation-name: texto7_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-align: center;}
+    text-align: center;
+}
 
-#artigo_10 .efeito p:first-child{
+#artigo_10 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_10 .efeito p:last-child{
+#artigo_10 .efeito p:last-child {
     width: 60%;
     margin-top: -15px;
     text-align: start;
@@ -1041,75 +1110,81 @@ p{
 
 }
 
-#artigo_10 img{width: 170px;
+#artigo_10 img {
+    width: 170px;
     animation-name: transicao_numero10;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 11*/
 
-#artigo_11{
-    background-color:lightgray;
+#artigo_11 {
+    background-color: lightgray;
     position: absolute;
-    top:0;
-    left:21.6%;
+    top: 0;
+    left: 21.6%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 
 }
 
-#artigo_11 .titulo{
+#artigo_11 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_10;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_11 p{ color: lightgray;
+#artigo_11 p {
+    color: lightgray;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo8;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-top: 15%;}
+    margin-top: 15%;
+}
 
-#artigo_11 .titulo h1{
+#artigo_11 .titulo h1 {
     font-size: 7em;
     margin-top: 12%;
     animation-duration: 3s;
-    animation-name:transicao_texto_10;
+    animation-name: transicao_texto_10;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_11 .efeito{
+#artigo_11 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_11 .efeito h3{
+#artigo_11 .efeito h3 {
     color: lightgray;
-    animation-name:texto6_h3;
+    animation-name: texto6_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-align: center;}
+    text-align: center;
+}
 
-#artigo_11 .efeito p:first-child{
+#artigo_11 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_11 .efeito p:last-child{
+#artigo_11 .efeito p:last-child {
     width: 60%;
     margin-top: -15px;
     text-align: start;
@@ -1117,75 +1192,80 @@ p{
 
 }
 
-#artigo_11 img{width:160px;
+#artigo_11 img {
+    width: 160px;
     animation-name: transicao_numero12;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
-
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 12*/
 
-#artigo_12{
-    background-color:#b42537;
+#artigo_12 {
+    background-color: #b42537;
     position: absolute;
-    top:0;
-    left:22.2%;
+    top: 0;
+    left: 22.2%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-#artigo_12 .titulo{
+#artigo_12 .titulo {
     width: 100%;
     height: auto;
-    margin-top:-7%;
-    margin-left:0.8%;
+    margin-top: -7%;
+    margin-left: 0.8%;
     animation-duration: 3s;
     animation-name: transicao_12;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_12 p{ color: #b42537;
+#artigo_12 p {
+    color: #b42537;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo6;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-top: 15%;}
+    margin-top: 15%;
+}
 
-#artigo_12 .titulo h1{
+#artigo_12 .titulo h1 {
     font-size: 7em;
     margin-top: 12%;
     animation-duration: 3s;
-    animation-name:transicao_texto_10;
+    animation-name: transicao_texto_10;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#artigo_12 .efeito{
+#artigo_12 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_12 .efeito h3{
+#artigo_12 .efeito h3 {
     color: #b42537;
-    animation-name:texto6_h3;
+    animation-name: texto6_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-align: end;}
+    text-align: end;
+}
 
-#artigo_12 .efeito p:first-child{
+#artigo_12 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-right: auto;
 
 }
 
-#artigo_12 .efeito p:last-child{
+#artigo_12 .efeito p:last-child {
     width: 60%;
     margin-top: -15px;
     text-align: start;
@@ -1193,24 +1273,26 @@ p{
 
 }
 
-#artigo_12 img{width:160px;
+#artigo_12 img {
+    width: 160px;
     animation-name: transicao_numero13;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
-
+    animation-fill-mode: forwards;
+}
 
 
 /*Artigo 13*/
 
-#artigo_13{
-    background-color:white;
+#artigo_13 {
+    background-color: white;
     position: absolute;
-    top:0;
-    left:23%;
+    top: 0;
+    left: 23%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
 }
+
 /*
 #artigo_13 .titulo{
     width: 100%;
@@ -1223,14 +1305,16 @@ p{
     animation-fill-mode: forwards;
 }*/
 
-#artigo_13 p{ color: white;
+#artigo_13 p {
+    color: white;
     font-size: 1.3em;
     line-height: 1.5em;
     animation-duration: 3s;
     animation-name: texto_artigo7;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    margin-top: 15%;}
+    margin-top: 15%;
+}
 
 /*#artigo_13 .titulo h1{
     font-size: 7em;
@@ -1241,27 +1325,29 @@ p{
     animation-fill-mode: forwards;
 }*/
 
-#artigo_13 .efeito{
+#artigo_13 .efeito {
     margin-top: -10%;
     width: 80%;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
-#artigo_13 .efeito h3{
+#artigo_13 .efeito h3 {
     color: white;
-    animation-name:texto7_h3;
+    animation-name: texto7_h3;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-align: start;}
+    text-align: start;
+}
 
-#artigo_13 .efeito p:first-child{
+#artigo_13 .efeito p:first-child {
     width: 70%;
     text-align: start;
     margin-left: auto;
 
 }
 
-#artigo_13 .efeito p:last-child{
+#artigo_13 .efeito p:last-child {
     width: 60%;
     margin-top: -15px;
     text-align: start;
@@ -1269,18 +1355,17 @@ p{
 
 }
 
-#artigo_13 img{width:190px;
+#artigo_13 img {
+    width: 190px;
     animation-name: transicao_numero13;
     animation-delay: 2s;
-    animation-fill-mode: forwards;}
+    animation-fill-mode: forwards;
+}
 
 
-
-
-
-@keyframes texto_artigo{
+@keyframes texto_artigo {
     0% {
-        color:lightgray;
+        color: lightgray;
     }
     100% {
         color: black;
@@ -1288,9 +1373,9 @@ p{
 }
 
 
-@keyframes texto_artigo6{
+@keyframes texto_artigo6 {
     0% {
-        color:#b42537;
+        color: #b42537;
     }
     100% {
         color: black;
@@ -1298,18 +1383,18 @@ p{
 }
 
 
-@keyframes texto_artigo7{
+@keyframes texto_artigo7 {
     0% {
-        color:white;
+        color: white;
     }
     100% {
         color: black;
     }
 }
 
-@keyframes texto_artigo8{
+@keyframes texto_artigo8 {
     0% {
-        color:lightgray;
+        color: lightgray;
     }
     100% {
         color: black;
@@ -1317,19 +1402,17 @@ p{
 }
 
 
-
-
-@keyframes transicao_2{
+@keyframes transicao_2 {
     0% {
         width: 100%;
     }
     100% {
-        height:40%;
+        height: 40%;
         width: 70%;
     }
 }
 
-@keyframes transicao_texto_2{
+@keyframes transicao_texto_2 {
     0% {
         font-size: 9em;
     }
@@ -1340,25 +1423,23 @@ p{
 }
 
 
-
-@keyframes transicao_6{
+@keyframes transicao_6 {
     0% {
         width: 100%;
     }
 
     100% {
-        height:70%;
+        height: 70%;
         width: 20%;
     }
 }
 
-@keyframes transicao_texto_6{
+@keyframes transicao_texto_6 {
     0% {
         font-size: 9em;
 
 
     }
-
 
 
     100% {
@@ -1367,24 +1448,23 @@ p{
     }
 }
 
-@keyframes transicao_7{
+@keyframes transicao_7 {
     0% {
         width: 90%;
     }
 
     100% {
-        height:60%;
+        height: 60%;
         width: 65%;
     }
 }
 
-@keyframes transicao_texto_7{
+@keyframes transicao_texto_7 {
     0% {
         font-size: 7em;
 
 
     }
-
 
 
     100% {
@@ -1394,24 +1474,23 @@ p{
 }
 
 
-@keyframes transicao_8{
+@keyframes transicao_8 {
     0% {
         width: 90%;
     }
 
     100% {
         width: 75%;
-        height:50%;
+        height: 50%;
     }
 }
 
-@keyframes transicao_texto_8{
+@keyframes transicao_texto_8 {
     0% {
         font-size: 7em;
 
 
     }
-
 
 
     100% {
@@ -1420,24 +1499,23 @@ p{
     }
 }
 
-@keyframes transicao_9{
+@keyframes transicao_9 {
     0% {
         width: 90%;
     }
 
     100% {
         width: 67%;
-        height:30%;
+        height: 30%;
     }
 }
 
-@keyframes transicao_texto_9{
+@keyframes transicao_texto_9 {
     0% {
         font-size: 7em;
 
 
     }
-
 
 
     100% {
@@ -1447,24 +1525,23 @@ p{
 }
 
 
-@keyframes transicao_10{
+@keyframes transicao_10 {
     0% {
         width: 80%;
     }
 
     100% {
         width: 70%;
-        height:20%;
+        height: 20%;
     }
 }
 
-@keyframes transicao_texto_10{
+@keyframes transicao_texto_10 {
     0% {
         font-size: 7em;
 
 
     }
-
 
 
     100% {
@@ -1475,10 +1552,12 @@ p{
 
 @keyframes transicao_numero10 {
 
-    0%{width:170px;
+    0% {
+        width: 170px;
     }
 
-    100%{width:170px;
+    100% {
+        width: 170px;
 
 
     }
@@ -1486,11 +1565,9 @@ p{
 }
 
 
-
-
-@keyframes texto_h3{
+@keyframes texto_h3 {
     0% {
-        color:lightgray;
+        color: lightgray;
     }
 
     100% {
@@ -1499,9 +1576,9 @@ p{
 }
 
 
-@keyframes texto7_h3{
+@keyframes texto7_h3 {
     0% {
-        color:white;
+        color: white;
     }
 
     100% {
@@ -1510,9 +1587,9 @@ p{
 }
 
 
-@keyframes texto6_h3{
+@keyframes texto6_h3 {
     0% {
-        color:#b42537;
+        color: #b42537;
 
 
     }
@@ -1527,33 +1604,38 @@ p{
 
 @keyframes transicao_numero {
 
-    0%{width:80px;
+    0% {
+        width: 80px;
     }
 
-    100%{width:70px;
+    100% {
+        width: 70px;
 
 
-    }}
+    }
+}
 
 @keyframes transicao_numero2 {
 
-    0%{width:110px;
+    0% {
+        width: 110px;
     }
 
-    100%{width:130px;
+    100% {
+        width: 130px;
 
 
     }
 
 }
 
-@keyframes transicao_12{
+@keyframes transicao_12 {
     0% {
         width: 90%;
     }
     100% {
         width: 60%;
-        height:40%;
+        height: 40%;
     }
 }
 
@@ -1566,7 +1648,9 @@ p{
 
 }
 
-.container p{font-family: "Azeret";}
+.container p {
+    font-family: "Azeret";
+}
 
 .cube {
     transform-style: preserve-3d;
@@ -1575,6 +1659,7 @@ p{
     position: relative;
 
 }
+
 .face {
     position: absolute;
     width: 100%;
@@ -1583,6 +1668,7 @@ p{
     align-items: center;
     justify-content: center;
 }
+
 .top {
     transform: rotateX(90deg) translateZ(1px);
     font-size: 1em;
@@ -1599,34 +1685,36 @@ p{
         transform: rotateX(0deg) rotateY(0deg);
     }
 
-    100%{
+    100% {
         transform: rotateX(-90deg) rotateY(0deg);
 
     }
 }
+
 @keyframes spindown {
     0% {
         transform: rotateX(-90deg) rotateY(0deg);
     }
 
-    100%{
+    100% {
         transform: rotateX(0deg) rotateY(0deg);
 
     }
 }
 
-.rotateup{
-    animation:spinup 0.9s forwards;
+.rotateup {
+    animation: spinup 0.9s forwards;
 }
-.rotatedown{
-    animation:spindown 0.9s forwards;
+
+.rotatedown {
+    animation: spindown 0.9s forwards;
 }
 
 .button {
     border: none;
     background-color: transparent;
     font-family: "Acumin Variable Concept";
-    font-size:1em;
+    font-size: 1em;
 }
 
 ::-webkit-scrollbar {
@@ -1648,8 +1736,8 @@ p{
 #artigo_typeEm {
     background-color: #FFFFFF;
     position: absolute;
-    top:0;
-    left:15%;
+    top: 0;
+    left: 15%;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -1661,23 +1749,24 @@ p{
     top: 0;
 }
 
-#artigo_typeEm p{
+#artigo_typeEm p {
     color: black;
     font-size: 1.5vw;
-    line-height: 1.5em;}
+    line-height: 1.5em;
+}
 
-#artigo_typeEm #p_um{
+#artigo_typeEm #p_um {
     width: 45%;
     text-align: start;
     margin-left: 10%;
 }
 
-#p_um a{
+#p_um a {
     font-family: "Acumin Variable Black";
     text-transform: uppercase;
 }
 
-#artigo_typeEm #p_dois{
+#artigo_typeEm #p_dois {
     width: 45%;
     margin-top: 8%;
     text-align: start;
@@ -1685,123 +1774,139 @@ p{
     margin-right: 10%;
 }
 
-#artigo_typeEm #p_tres{
+#artigo_typeEm #p_tres {
     width: 60%;
     margin-top: 8%;
     text-align: start;
     margin-left: auto;
     margin-right: 13%;
 }
-.Em_Ex_geral{display: flex;
-margin-top: 10%;}
 
-#Em_Ex_texto{width: 80%;}
+.Em_Ex_geral {
+    display: flex;
+    margin-top: 10%;
+}
 
-#imagens_letras{width: 20%;
-margin-top: 5%;}
+#Em_Ex_texto {
+    width: 80%;
+}
 
-#imagens_letras img{
-    width:200px;
+#imagens_letras {
+    width: 20%;
+    margin-top: 5%;
+}
+
+#imagens_letras img {
+    width: 200px;
     height: 250px;
 }
 
-#Em_Ex_texto h1{
+#Em_Ex_texto h1 {
     /*font-size: 6em;*/
 }
 
-#Em_Ex_texto_um{
+#Em_Ex_texto_um {
     width: 45%;
     margin-right: auto;
     margin-left: 5%;
 }
 
-#Em_Ex_texto_dois{
+#Em_Ex_texto_dois {
     width: 80%;
     margin-left: auto;
     margin-right: 5%;
 }
 
 
-#Em_Ex_texto_flex{display: flex;}
+#Em_Ex_texto_flex {
+    display: flex;
+}
 
-#imagens_letras_2 img{
-    width:200px;
+#imagens_letras_2 img {
+    width: 200px;
     height: 250px;
 }
-#Em_Ex_texto_2{width: 80%;}
 
-#imagens_letras_2{width: 20%;
-    margin-top: 5%;}
+#Em_Ex_texto_2 {
+    width: 80%;
+}
+
+#imagens_letras_2 {
+    width: 20%;
+    margin-top: 5%;
+}
 
 
-#Em_Ex_texto_2 h1{
+#Em_Ex_texto_2 h1 {
     /*font-size: 6em;*/
     margin-left: 2%;
 }
 
-#Em_Ex_texto_um_2{
+#Em_Ex_texto_um_2 {
     width: 50%;
     margin-left: 3%;
 }
-#Em_Ex_texto_dois_2{
+
+#Em_Ex_texto_dois_2 {
     width: 50%;
     margin-top: 30%;
 }
 
 
-
-.pos_neg{
+.pos_neg {
     position: relative;
     z-index: 0;
     margin-top: 6vh;
 }
 
-#positive_negative h1:first-child{
+#positive_negative h1:first-child {
     width: 80%;
     margin-left: 3%;
     z-index: 1;
     /*font-size: 6em;*/
 }
 
-#h2{
+#h2 {
     margin-left: 40%;
     z-index: 1;
 }
 
-#positive_negative p{
+#positive_negative p {
     width: 60%;
     margin-left: 10%;
     z-index: 1;
 }
 
 
-.pos_neg img{
+.pos_neg img {
     position: absolute;
     width: 25vw;
     z-index: -1;
 
 }
 
-.pos_neg img:first-child{
+.pos_neg img:first-child {
     left: 8%;
     top: 48vh;
 }
 
-.pos_neg img:nth-child(2){
+.pos_neg img:nth-child(2) {
     left: 60%;
     top: -6vh;
 }
 
 
-#six_emotional{margin-top: 20%;}
+#six_emotional {
+    margin-top: 20%;
+}
 
-#six_emotional h1{
+#six_emotional h1 {
     /*font-size: 6em;*/
     margin-left: 3%;
     width: 90%;
 }
 
-h2{
+h2 {
     font-size: 3em;
     line-height: 1.2em;
     font-family: "Acumin Variable Black";
@@ -1810,36 +1915,45 @@ h2{
     letter-spacing: 0.05em;
 }
 
-#six_emotional_flex{display: flex;}
-#six_emotional_esq{width: 50%;
-margin-left: 5%;}
-
-#six_emotional_dir{width: 50%;
-    margin-right: 5%;
-margin-top: 15%;}
-
-
-/*titulo 13 ways*/
-.Michael_4{
-    margin-left:30%;
-}
-.Michael_3{
-    display:flex;
-}
-.Michael_3 div:nth-child(2){
-    margin-left:70%;
-}
-
-.Michael_6{
+#six_emotional_flex {
     display: flex;
 }
 
-.Michael_6 div:nth-child(2){
-    margin-left:60%;
+#six_emotional_esq {
+    width: 50%;
+    margin-left: 5%;
+}
+
+#six_emotional_dir {
+    width: 50%;
+    margin-right: 5%;
+    margin-top: 15%;
 }
 
 
-.titulo_artigo h1{
+/*titulo 13 ways*/
+.Michael_4 {
+    margin-left: 30%;
+}
+
+.Michael_3 {
+    display: flex;
+}
+
+.Michael_3 div:nth-child(2) {
+    margin-left: 70%;
+}
+
+.Michael_6 {
+    display: flex;
+}
+
+.Michael_6 div:nth-child(2) {
+    margin-left: 60%;
+}
+
+
+.titulo_artigo h1 {
     transition: left 1s, transform 1s;
     margin: 0;
 }
@@ -1851,26 +1965,37 @@ margin-top: 15%;}
     margin-top: 2em;
     position: relative;
 }
+
 .titulo_artigo_2 {
     width: 90%;
     height: 80vh;
     margin: 0 auto;
     margin-top: 2em;
+    position: relative;
+    text-align: center;
 }
-.titulo_artigo_2 div{
+
+#seta {
+    position: absolute;
+    width: 40%;
+    transform: translate(-50%, 0%);
+}
+
+.titulo_artigo_2 div {
     display: flex;
     justify-content: space-between;
 }
-.titulo_artigo_2 h1{
-margin: 0;
+
+.titulo_artigo_2 h1 {
+    margin: 0;
     line-height: 8vw;
 }
 
-.div_end{
+.div_end {
     justify-content: flex-end !important;
 }
 
-.titulo_artigo p{
+.titulo_artigo p {
     line-height: 4px;
 }
 
@@ -1916,4 +2041,34 @@ margin: 0;
     position: absolute;
     top: 46%;
     left: 0;
+}
+
+/*6 emotions*/
+.emotions_6 {
+    width:80vw;
+    margin: 0 auto;
+}
+
+.emotion{
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 1em;
+    align-items: center;
+}
+
+.emotion div *{
+width:10%;
+}
+
+
+.col1-12{
+    grid-column: 1/12;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
 }
