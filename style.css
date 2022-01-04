@@ -2028,10 +2028,11 @@ top:0;
 
 #img_seta img{
     position: absolute;
-    width: 50%;
-    transform: translate(-50%, 0%);
+    width: 90%;
+    transform: translate(-50%, 0%) rotate(-25deg);
     z-index: 2;
     left:50%;
+    transform-origin: center;
 }
 
 
