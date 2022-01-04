@@ -13,5 +13,5 @@ document.onmousemove = function(e) {
   var pi = Math.PI;
   var angle = theta * (180/pi);
   var trueangle = angle;
-  image1.style.transform = `rotate(${trueangle}deg) translate(-50%, 0%)`;
+  //image1.style.transform = `rotate(${trueangle}deg) translate(-50%, 0%)`;
 };
