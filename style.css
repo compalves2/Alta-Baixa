@@ -2026,11 +2026,12 @@ top:0;
     left: 100%;
 }
 
-#seta {
+#img_seta img{
     position: absolute;
-    width: 55%;
+    width: 50%;
     transform: translate(-50%, 0%);
     z-index: 2;
+    left:50%;
 }
 
 
