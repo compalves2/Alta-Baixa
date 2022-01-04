@@ -30,7 +30,7 @@ body {
 }
 
 .grey {
-    background-color: #bfbabf;
+    background-color: #cccccc;
 }
 
 h1 {
@@ -189,7 +189,7 @@ p {
 
 /*ARTIGO 13 Ways Introdução*/
 #artigo_introducao {
-    background-color: #FFFFFF;
+    background-color: #cccccc;
     position: absolute;
     top: 0;
     left: 15%;
@@ -328,10 +328,11 @@ p {
 .artigo {
     overflow: scroll;
     transition: left 1s;
+    box-shadow: -5px 5px 30px 2px rgb(0 0 0 / 30%);
 }
 
 .close {
-    left: 100% !important;
+    left: 105% !important;
 }
 
 /*ARTIGO 1*/
@@ -1734,7 +1735,7 @@ p {
 }
 
 #artigo_typeEm {
-    background-color: #FFFFFF;
+    background-color: #cccccc;
     position: absolute;
     top: 0;
     left: 15%;
@@ -1743,6 +1744,7 @@ p {
     overflow-x: hidden;
     top: -100%;
     transition: top 1s;
+    box-shadow: -5px 5px 30px 2px rgb(0 0 0 / 30%);
 }
 
 #artigo_typeEm.open {
@@ -1936,6 +1938,10 @@ h2 {
     margin-left: 30%;
 }
 
+.Michael_7 {
+    margin-left: 30%;
+}
+
 .Michael_3 {
     display: flex;
 }
@@ -1968,27 +1974,62 @@ h2 {
 
 .titulo_artigo_2 {
     width: 90%;
-    height: 80vh;
+    height: 70vh;
     margin: 0 auto;
     margin-top: 2em;
     position: relative;
     text-align: center;
+    margin-bottom:30vh;
+}
+
+#intro_emo_1{
+top:0;
+    left: 0;
+}
+#intro_emo_2 {
+    position: absolute;
+    top: 0%;
+    transform: translateX(-100%);
+    left: 100%;
+}
+
+#intro_emo_div{
+    top:23%;
+    left: 0;
+}
+#intro_emo_3 {
+    position: absolute;
+    top: 46%;
+}
+
+#intro_emo_4 {
+    position: absolute;
+    top: 46%;
+    transform: translateX(-100%);
+    left: 100%;
+}
+
+#intro_emo_5 {
+    position: absolute;
+    top: 69%;
+}
+
+#intro_emo_6 {
+    position: absolute;
+    top: 92%;
 }
 
 #seta {
     position: absolute;
-    width: 40%;
+    width: 55%;
     transform: translate(-50%, 0%);
 }
 
-.titulo_artigo_2 div {
-    display: flex;
-    justify-content: space-between;
-}
 
 .titulo_artigo_2 h1 {
     margin: 0;
-    line-height: 8vw;
+    position: absolute;
+
 }
 
 .div_end {
@@ -1997,6 +2038,7 @@ h2 {
 
 .titulo_artigo p {
     line-height: 4px;
+    font-size: 0.895vw;
 }
 
 #title_13_1 {
@@ -2026,20 +2068,20 @@ h2 {
 
 #title_13_5 {
     position: absolute;
-    top: 23%;
+    top: 69%;
     left: 0;
 }
 
 #title_13_6 {
     position: absolute;
-    top: 23%;
+    top: 69%;
     transform: translateX(-100%);
     left: 100%;
 }
 
 #title_13_7 {
     position: absolute;
-    top: 46%;
+    top: 92%;
     left: 0;
 }
 
@@ -2064,7 +2106,6 @@ h2 {
 width:10%;
 }
 
-
 .col1-12{
     grid-column: 1/12;
 }
@@ -2080,33 +2121,75 @@ width:10%;
     left: 0;
 }
 
+.titulo_artigo_2 div p {
+    line-height: 4px !important;
+    font-size: 0.895vw !important;
+}
+
+.Autores_typem{
+
+}
+.Autores_typem_2{
+display: flex;
+    justify-content: space-between;
+}
+.Autores_typem_3{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Autores_typem_5{
+margin-left: 30%;
+}
+
+.Autores_typem_4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Autores_typem_7{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo_artigo_2 div{
+text-align: left;
+}
+
 #title_emotion_2{
     position:absolute;
-    top:73vh;
+    top: 21.5%;
     right: 0;
 }
 
 #title_emotion_3{
     position:absolute;
-    top:163vh;
+    top: 37.7%;
     left: 0;
 }
 
 #title_emotion_4{
     position:absolute;
-    top: 219vh;
+    top: 50%;
     right: 0;
 }
 
 #title_emotion_5{
     position:absolute;
-    top: 293vh;
+    top: 68%;
     right: 17vw;
 }
 
 #title_emotion_6{
     position:absolute;
-    top: 365vh;
-    left: 0;
+    top: 93.3%;
+    right: 0;
 }
+
+.artigo_1_intro{
+    margin-top: 28vh;
+}
+
+
 
