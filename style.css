@@ -2047,6 +2047,7 @@ h2 {
 .emotions_6 {
     width:80vw;
     margin: 0 auto;
+    position: relative;
 }
 
 .emotion{
@@ -2072,3 +2073,40 @@ width:10%;
     display: flex;
     justify-content: space-between;
 }
+
+#title_emotion_1{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+
+#title_emotion_2{
+    position:absolute;
+    top:73vh;
+    right: 0;
+}
+
+#title_emotion_3{
+    position:absolute;
+    top:163vh;
+    left: 0;
+}
+
+#title_emotion_4{
+    position:absolute;
+    top: 219vh;
+    right: 0;
+}
+
+#title_emotion_5{
+    position:absolute;
+    top: 293vh;
+    right: 17vw;
+}
+
+#title_emotion_6{
+    position:absolute;
+    top: 365vh;
+    left: 0;
+}
+
