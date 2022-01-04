@@ -1993,6 +1993,11 @@ top:0;
     left: 100%;
 }
 
+.titulo_artigo_2 h1 {
+    transition: left 1s, transform 1s;
+    margin: 0;
+}
+
 #intro_emo_div{
     top:23%;
     left: 0;
@@ -2017,12 +2022,15 @@ top:0;
 #intro_emo_6 {
     position: absolute;
     top: 92%;
+    transform: translateX(-100%);
+    left: 100%;
 }
 
 #seta {
     position: absolute;
     width: 55%;
     transform: translate(-50%, 0%);
+    z-index: 2;
 }
 
 
@@ -2115,11 +2123,6 @@ width:10%;
     justify-content: space-between;
 }
 
-#title_emotion_1{
-    position:absolute;
-    top:0;
-    left: 0;
-}
 
 .titulo_artigo_2 div p {
     line-height: 4px !important;
