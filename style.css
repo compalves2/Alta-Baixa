@@ -2161,6 +2161,12 @@ margin-left: 30%;
 text-align: left;
 }
 
+#title_emotion_1{
+    position:absolute;
+    top: 0%;
+    right: 0;
+}
+
 #title_emotion_2{
     position:absolute;
     top: 21.5%;
