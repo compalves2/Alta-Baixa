@@ -1,5 +1,4 @@
 var image1 =  document.querySelector("#img_seta>img");
-var janela =  document.getElementById("artigo_typeEm");
 
 document.onmousemove = function(e) {
   var rect1 = image1.getBoundingClientRect();
