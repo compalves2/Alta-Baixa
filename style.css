@@ -1847,6 +1847,7 @@ p {
 #Em_Ex_texto_um_2 {
     width: 50%;
     margin-left: 3%;
+    z-index: 1;
 }
 
 #Em_Ex_texto_dois_2 {
@@ -1865,6 +1866,7 @@ p {
     width: 80%;
     margin-left: 3%;
     z-index: 1;
+    position: relative;
     /*font-size: 6em;*/
 }
 
@@ -2035,6 +2037,34 @@ top:0;
     transform-origin: center;
 }
 
+.seta_2{
+    top:0;
+    left:0;
+    position: absolute;
+    width:50%;
+    z-index: -1;
+}
+
+.mais{
+    position: absolute;
+    top:0;
+    left:50%;
+    width:23vw !important;
+}
+
+.menos{
+    position: absolute;
+    top:65%;
+    left:10%;
+    width:23vw !important;
+}
+
+
+.titulo_workflow{
+    position: relative;
+    z-index: 1;
+}
+
 
 .titulo_artigo_2 h1 {
     margin: 0;
@@ -2164,8 +2194,8 @@ text-align: left;
 
 #title_emotion_1{
     position:absolute;
-    top: 0%;
-    right: 0;
+    top: 0;
+    left: 0;
 }
 
 #title_emotion_2{

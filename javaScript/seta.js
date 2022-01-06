@@ -8,5 +8,5 @@ document.onmousemove = function(e) {
   var dy = e.pageY - centerY;
   var theta = Math.atan2(dy, dx);
   var angle = theta * (180/Math.PI);
-  image1.style.transform = `translate(-50%, 0%) rotate(${45+angle}deg)`;
+  image1.style.transform = `translate(-50%, 0%) rotate(${20+angle}deg)`;
 };
