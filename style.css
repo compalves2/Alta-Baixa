@@ -199,6 +199,7 @@ p {
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 #intro1_1 {
