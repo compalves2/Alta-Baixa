@@ -361,8 +361,8 @@ p {
 
 .morada{
     position: absolute;
-    line-height: 1.2vw !important;
-    font-size: 0.9vw !important;
+    line-height: 1.4vw !important;
+    font-size: 1vw !important;
 }
 
 .artigo .texto *{
@@ -389,7 +389,7 @@ p {
 }
 
 #artigo_1 .morada{
-    top: 85%;
+    top: 84%;
     left: 80%;
 }
 
