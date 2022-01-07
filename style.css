@@ -55,7 +55,7 @@ h1 {
 
 h3 {
     font-size: 2em;
-    font-family: "Neue Haas Grotesk Text Pro";
+    font-family: "Acumin Variable Black";
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -225,7 +225,8 @@ p {
     margin-left: 70%;
     font-size: 1.9em;
     line-height: 1em;
-    margin-top: 15vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 /*#artigo_introducao h1{
@@ -238,14 +239,6 @@ p {
 }*/
 
 
-.titulo {
-    width: 100%;
-    height: auto;
-    animation-duration: 3s;
-    animation-name: transicao;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
 
 /*
 .efeito{width: 65%;
@@ -340,6 +333,22 @@ p {
 
 /*ARTIGO 1*/
 
+.texto p {
+    color: black;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+}
+
+.texto{
+    width:100%;
+    margin-top: 20vh;
+}
+
+.artigo_conteudo{
+    width: 95%;
+    margin: 0 auto;
+}
+
 #artigo_1 {
     background-color: lightgray;
     position: absolute;
@@ -352,73 +361,51 @@ p {
 
 #artigo_1 .titulo {
     width: 100%;
-    height: auto;
-    margin-left: 0.8%;
-    animation-duration: 3s;
-    animation-name: transicao_2;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
-#artigo_1 p {
-    color: lightgray;
-    font-size: 1.3em;
-    line-height: 1.5em;
-    animation-duration: 3s;
-    animation-name: texto_artigo1;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    margin-bottom: 10%;
-}
-
-#artigo_1 .titulo h1 {
-    font-size: 9em;
-    animation-duration: 3s;
-    animation-name: transicao_texto_2;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
-.efeito h3 {
-    color: lightgray;
-    animation-duration: 3s;
-    animation-name: texto_h3;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.titulo_numero {
     display: flex;
     justify-content: space-between;
+    margin-top: 5vh;
+    position: relative;
 }
 
-.titulo_numero img {
-    width: 80px;
-    margin-right: 4%;
-    animation-name: transicao_numero;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+.morada{
+    position: absolute;
+    top: 83%;
+    left: 80%;
 }
 
-#artigo_1 .efeito {
-    margin-top: -10%;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+
+.titulo img{
+    width: auto;
+    height: 25em;
 }
 
-#artigo_1 .efeito p:first-child {
+#artigo_1 .texto *{
+    margin:0;
+}
+
+.texto{
+    margin-bottom: 10vh;
+}
+
+#artigo_1 .texto p:first-child{
+    width: 50%;
+    padding-left: 50%;
+    margin-bottom: 5vh;
+}
+
+#artigo_1 .texto h3{
+    width:70%;
+    padding-left: 20%;
+    margin-bottom: 5vh;
+}
+
+#artigo_1 .texto p:last-child{
     width: 70%;
-    text-align: end;
-    margin-left: auto;
-
+    padding-left: 20%;
+    margin-bottom: 5vh;
 }
 
-#artigo_1 .efeito p:last-child {
-    width: 60%;
-}
+
 
 /*Artigo 2*/
 
@@ -1760,13 +1747,32 @@ p {
     margin-bottom: 30vh;
 }
 
+.footer_13{
+    position: relative;
+    margin-bottom: 20vh;
+}
 
+.footer_13 img{
+    width: 3vw;
+    position: absolute;
+    top:0;
+    right: 2vw;
+}
 
 .footer_typem img{
     width: 3vw;
     position: absolute;
     top:0;
     right: 2vw;
+}
+
+.footer_13 img:hover{
+    cursor: pointer;
+}
+
+
+.footer_typem img:hover{
+    cursor: pointer;
 }
 
 #artigo_typeEm p {
@@ -1817,12 +1823,13 @@ p {
 }
 
 #imagens_letras img {
-    width: 200px;
-    height: 250px;
+    width: 13vw;
+    height: auto;
 }
 
-#Em_Ex_texto h1 {
-    /*font-size: 6em;*/
+#imagens_letras_2 img {
+    width: 13vw;
+    height: auto;
 }
 
 #Em_Ex_texto_um {
@@ -1842,10 +1849,7 @@ p {
     display: flex;
 }
 
-#imagens_letras_2 img {
-    width: 200px;
-    height: 250px;
-}
+
 
 #Em_Ex_texto_2 {
     width: 80%;
@@ -1858,7 +1862,6 @@ p {
 
 
 #Em_Ex_texto_2 h1 {
-    /*font-size: 6em;*/
     margin-left: 2%;
 }
 
@@ -1885,7 +1888,6 @@ p {
     margin-left: 3%;
     z-index: 1;
     position: relative;
-    /*font-size: 6em;*/
 }
 
 #h2 {
@@ -1923,7 +1925,6 @@ p {
 }
 
 #six_emotional h1 {
-    /*font-size: 6em;*/
     margin-left: 3%;
     width: 90%;
 }
