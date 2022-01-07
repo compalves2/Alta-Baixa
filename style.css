@@ -94,8 +94,8 @@ a:hover {
     font-weight: bold;
 }
 
-ul li:first-child {
-    margin-right: 30px;
+ul li{
+    margin-right: 0.8vw;
 }
 
 /*INDEX*/
@@ -105,6 +105,7 @@ main {
     width: 95%;
     margin: 0 auto;
     position: relative;
+    height: 100vh;
 }
 
 main img {
@@ -1678,6 +1679,10 @@ p {
 .front {
     transform: rotateX(0deg) translateZ(1px);
     font-size: 1em;
+}
+
+.logo p{
+    font-size: 100% !important;
 }
 
 
