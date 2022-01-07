@@ -359,6 +359,12 @@ p {
     margin-bottom: 10vh;
 }
 
+.morada{
+    position: absolute;
+    line-height: 1.2vw !important;
+    font-size: 0.9vw !important;
+}
+
 .artigo .texto *{
     margin:0;
 }
@@ -383,10 +389,10 @@ p {
 }
 
 #artigo_1 .morada{
-    position: absolute;
-    top: 80%;
+    top: 85%;
     left: 80%;
 }
+
 
 
 
