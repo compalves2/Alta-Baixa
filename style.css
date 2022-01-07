@@ -331,7 +331,7 @@ p {
     left: 105% !important;
 }
 
-/*ARTIGO 1*/
+/*ARTIGO geral*/
 
 .texto p {
     color: black;
@@ -349,6 +349,20 @@ p {
     margin: 0 auto;
 }
 
+.titulo img{
+    width: auto;
+    height: 20em;
+}
+
+.texto{
+    margin-bottom: 10vh;
+}
+
+.artigo .texto *{
+    margin:0;
+}
+
+/*ARTIGO 1*/
 #artigo_1 {
     background-color: lightgray;
     position: absolute;
@@ -367,25 +381,14 @@ p {
     position: relative;
 }
 
-.morada{
+#artigo_1 .morada{
     position: absolute;
-    top: 83%;
+    top: 80%;
     left: 80%;
 }
 
 
-.titulo img{
-    width: auto;
-    height: 25em;
-}
 
-#artigo_1 .texto *{
-    margin:0;
-}
-
-.texto{
-    margin-bottom: 10vh;
-}
 
 #artigo_1 .texto p:first-child{
     width: 50%;
