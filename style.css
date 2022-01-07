@@ -22,6 +22,9 @@
     src: url('data/AzeretMono-Regular.ttf') format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -1719,7 +1722,7 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 1vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -1745,10 +1748,25 @@ p {
     top: -100%;
     transition: top 1s;
     box-shadow: -5px 5px 30px 2px rgb(0 0 0 / 30%);
+    scroll-behavior: smooth;
 }
 
 #artigo_typeEm.open {
     top: 0;
+}
+
+.footer_typem{
+    position: relative;
+    margin-bottom: 30vh;
+}
+
+
+
+.footer_typem img{
+    width: 3vw;
+    position: absolute;
+    top:0;
+    right: 2vw;
 }
 
 #artigo_typeEm p {
@@ -2031,7 +2049,7 @@ top:0;
 #img_seta img{
     position: absolute;
     width: 90%;
-    transform: translate(-50%, 0%) rotate(-25deg);
+    transform: translate(-50%, 0%);
     z-index: 2;
     left:50%;
     transform-origin: center;
