@@ -54,9 +54,9 @@ function topPage() {
     }
 
     for (var i = 0; i < side_num.length; i++) {
-            if (i!=side_num.length-1  && !side_num[i].page.classList.contains("close")) {
-                side_num[i].page.classList.add("close");
-            }
+        if (i!=side_num.length-1  && !side_num[i].page.classList.contains("close")) {
+            side_num[i].page.classList.add("close");
+        }
     }
 }
 

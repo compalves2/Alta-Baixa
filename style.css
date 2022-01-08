@@ -243,11 +243,10 @@ p {
 #intro_1_4 {
     font-family: "Acumin Variable Black";
     text-transform: uppercase;
-    margin-left: 70%;
+    margin-left: 20%;
     font-size: 1.9em;
     line-height: 1em;
     margin-top: 10vh;
-    margin-bottom: 10vh;
 }
 
 
@@ -677,6 +676,50 @@ p {
 
 
 /*Artigo 13*/
+.footer_13 {
+    margin-bottom: 5vh;
+    margin-top:30vh;
+    display: flex;
+    width: 98%;
+    align-self: center;
+}
+
+.footer_13 img:hover {
+    cursor: pointer;
+}
+
+.num_footer img{
+    height: 6vh;
+    opacity: 20%;
+}
+
+.num_footer img:hover{
+    opacity: 100%;
+    transition: ease-in-out opacity 1s;
+}
+
+#goTop13{
+    height: 5vh;
+    align-self: center;
+    opacity: 70%;
+}
+
+#goTop13:hover{
+    opacity: 100%;
+    transition: ease-in-out opacity 1s;
+}
+
+.on{
+    opacity: 70% !important;
+}
+
+.num_footer{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin:0 auto;
+}
 
 #artigo_13 {
     position: absolute;
@@ -856,17 +899,7 @@ p {
     margin-bottom: 30vh;
 }
 
-.footer_13 {
-    position: relative;
-    margin-bottom: 20vh;
-}
 
-.footer_13 img {
-    width: 3vw;
-    position: absolute;
-    top: 0;
-    right: 2vw;
-}
 
 .footer_typem img {
     width: 3vw;
@@ -875,9 +908,7 @@ p {
     right: 2vw;
 }
 
-.footer_13 img:hover {
-    cursor: pointer;
-}
+
 
 
 .footer_typem img:hover {
