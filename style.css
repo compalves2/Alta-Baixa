@@ -55,6 +55,21 @@ h1 {
     cursor:pointer;
 }
 
+.cube .active{
+    font-weight: bold;
+}
+
+.container .front{
+    opacity: 50%;
+}
+
+.edicao .front{
+    opacity: 100%;
+}
+
+.side_right_numbers p{
+    opacity: 50%;
+}
 
 .title h1 span:hover{
     cursor:default;
@@ -695,7 +710,7 @@ p {
 
 .num_footer img:hover{
     opacity: 100%;
-    transition: ease-in-out opacity 1s;
+    transition: ease-in-out opacity 0.5s;
 }
 
 #goTop13{
@@ -706,7 +721,7 @@ p {
 
 #goTop13:hover{
     opacity: 100%;
-    transition: ease-in-out opacity 1s;
+    transition: ease-in-out opacity 0.5s;
 }
 
 .on{
