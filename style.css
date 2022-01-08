@@ -29,7 +29,7 @@ html {
 body {
     margin: 0;
     overscroll-behavior: none;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .grey {
@@ -47,10 +47,21 @@ h1 {
 
 .hovBold:hover {
     font-weight: bolder;
+    cursor:pointer;
 }
 
 .hovBold h1:hover {
     font-weight: bolder;
+    cursor:pointer;
+}
+
+
+.title h1 span:hover{
+    cursor:default;
+}
+
+.sub-side_num .front:hover{
+    cursor:default;
 }
 
 h3 {
@@ -94,6 +105,7 @@ ul a {
 
 a:hover {
     font-weight: bold;
+    cursor:pointer;
 }
 
 ul li {
@@ -166,6 +178,10 @@ main img {
     line-height: 0.2em;
     margin-top: 0;
     font-family: Azeret;
+}
+
+.side_right p:hover {
+    cursor:default;
 }
 
 .hide {
@@ -290,9 +306,11 @@ p {
 }
 
 .morada {
-    position: absolute;
     line-height: 1.4vw !important;
     font-size: 1vw !important;
+    margin: 0 10% 0 0 ;
+    align-self: flex-end;
+    min-width: fit-content;
 }
 
 .artigo .texto * {
@@ -304,27 +322,38 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
-    position: relative;
+}
+
+.titulo div{
+    display: flex;
+    flex-direction: row-reverse;
+    height: fit-content;
 }
 
 .titulo h1{
-    width:65%;
+    width:62%;
+}
+
+.artigo:nth-child(3n){
+    background-color:#ffffff;
+}
+
+.artigo:nth-child(3n-1){
+    background-color: #b42537;
+}
+
+.artigo:nth-child(3n-2){
+    background-color: #cccccc;
 }
 
 /*ARTIGO 1*/
 #artigo_1 {
-    background-color: lightgray;
     position: absolute;
     top: 0;
     left: 15.5%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
-}
-
-#artigo_1 .morada {
-    top: 84%;
-    left: 80%;
 }
 
 
@@ -350,7 +379,6 @@ p {
 
 /*Artigo 2*/
 #artigo_2 {
-    background-color: white;
     position: absolute;
     top: 0;
     left: 16.2%;
@@ -359,10 +387,6 @@ p {
     overflow-x: hidden;
 }
 
-#artigo_2 .morada {
-    top: 73.5%;
-    left: 73%;
-}
 
 #artigo_2 .texto p:first-child {
     width: 50%;
@@ -381,17 +405,12 @@ p {
 
 /*Artigo 3*/
 #artigo_3 {
-    background-color: #b42537;
     position: absolute;
     top: 0;
     left: 16.8%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
-}
-#artigo_3 .morada {
-    top: 73.5%;
-    left: 73%;
 }
 
 #artigo_3 .texto p:first-child {
@@ -411,18 +430,12 @@ p {
 /*Artigo 4*/
 
 #artigo_4 {
-    background-color: white;
     position: absolute;
     top: 0;
     left: 17.4%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
-}
-
-#artigo_4 .morada {
-    top: 73.5%;
-    left: 80%;
 }
 
 #artigo_4 .texto p:first-child {
@@ -445,18 +458,12 @@ p {
 /*Artigo 5*/
 
 #artigo_5 {
-    background-color: lightgray;
     position: absolute;
     top: 0;
     left: 18%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
-}
-
-#artigo_5 .morada {
-    top: 73.5%;
-    left: 73%;
 }
 
 #artigo_5 .texto p:first-child {
@@ -480,7 +487,6 @@ p {
 /*Artigo 6*/
 
 #artigo_6 {
-    background-color: #b42537;
     position: absolute;
     top: 0;
     left: 18.6%;
@@ -488,11 +494,6 @@ p {
     overflow: scroll;
     overflow-x: hidden;
 
-}
-
-#artigo_6 .morada {
-    top: 73.5%;
-    left: 80%;
 }
 
 #artigo_6 .texto p:first-child {
@@ -515,22 +516,36 @@ p {
 /*Artigo 7*/
 
 #artigo_7 {
-    background-color: white;
     position: absolute;
     top: 0;
     left: 19.2%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
-
 }
 
+#artigo_7 .texto p:first-child {
+    width: 40%;
+    margin-bottom: 5vh;
+    padding-left: 60%;
+}
+#artigo_7 .texto p:nth-child(2) {
+    width: 70%;
+}
+
+#artigo_7 .texto h3 {
+    width: 70%;
+    margin-bottom: 5vh;
+}
+
+#artigo_7 .texto p:last-child {
+    width: 70%;
+}
 
 
 /*Artigo 8*/
 
 #artigo_8 {
-    background-color: lightgray;
     position: absolute;
     top: 0;
     left: 19.8%;
@@ -540,39 +555,77 @@ p {
 
 }
 
+#artigo_8 .texto p:first-child {
+    width: 40%;
+    margin-bottom: 5vh;
+}
+
+#artigo_8 .texto h3 {
+    width: 50%;
+    margin-bottom: 5vh;
+    padding-left: 20%;
+}
 
 
 /*Artigo 9*/
 
 #artigo_9 {
-    background-color: #b42537;
     position: absolute;
     top: 0;
     left: 20.4%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
+}
 
+#artigo_9 .texto p:first-child {
+    width: 50%;
+    margin-bottom: 5vh;
+    padding-left: 40%;
+}
+
+#artigo_9 .texto p:nth-child(2) {
+    width: 80%;
+    margin-bottom: 5vh;
+}
+
+
+#artigo_9 .texto h3 {
+    width: 80%;
+    margin-bottom: 5vh;
 }
 
 /*Artigo 10*/
 
 #artigo_10 {
-    background-color: white;
     position: absolute;
     top: 0;
     left: 21%;
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
+}
 
+#artigo_10 .texto p:first-child {
+    width: 70%;
+    margin-bottom: 5vh;
+}
+
+#artigo_10 .texto p:last-child {
+    width: 30%;
+    margin-bottom: 5vh;
+}
+
+
+#artigo_10 .texto h3 {
+    width: 30%;
+    margin-bottom: 5vh;
 }
 
 
 /*Artigo 11*/
 
 #artigo_11 {
-    background-color: lightgray;
     position: absolute;
     top: 0;
     left: 21.6%;
@@ -582,11 +635,27 @@ p {
 
 }
 
+#artigo_11 .texto p:first-child {
+    width: 40%;
+    margin-bottom: 5vh;
+    padding-left: 60%;
+}
+
+#artigo_11 .texto p:nth-child(2) {
+    width: 80%;
+    margin-bottom: 5vh;
+}
+
+
+#artigo_11 .texto h3 {
+    width: 80%;
+    margin-bottom: 5vh;
+}
+
 
 /*Artigo 12*/
 
 #artigo_12 {
-    background-color: #b42537;
     position: absolute;
     top: 0;
     left: 22.2%;
@@ -595,11 +664,21 @@ p {
     overflow-x: hidden;
 }
 
+#artigo_12 .texto p {
+    width: 50%;
+    margin-bottom: 5vh;
+    padding-left: 50%;
+}
+
+#artigo_12 .texto h3 {
+    width: 70%;
+    margin-bottom: 5vh;
+}
+
 
 /*Artigo 13*/
 
 #artigo_13 {
-    background-color: white;
     position: absolute;
     top: 0;
     left: 23%;
@@ -607,6 +686,30 @@ p {
     overflow: scroll;
     overflow-x: hidden;
 }
+
+#artigo_13 .texto p:nth-child(1) {
+    width: 50%;
+    margin-bottom: 5vh;
+}
+
+#artigo_13 .texto p:nth-child(2) {
+    width: 70%;
+    margin-bottom: 5vh;
+    padding-left: 30%;
+}
+
+#artigo_13 .texto h3 {
+    width: 70%;
+    margin-bottom: 5vh;
+    padding-left: 30%;
+}
+
+#artigo_13 .texto p:last-child {
+    width: 70%;
+    margin-bottom: 5vh;
+    padding-left: 30%;
+}
+
 
 
 /*cubo*/
