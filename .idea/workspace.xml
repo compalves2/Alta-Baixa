@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -78,22 +78,12 @@
       <workItem from="1641565694066" duration="373000" />
       <workItem from="1641566640319" duration="24000" />
       <workItem from="1641576454456" duration="4956000" />
-      <workItem from="1641592616463" duration="3825000" />
+      <workItem from="1641592616463" duration="7941000" />
+      <workItem from="1641604779094" duration="1223000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="273" y="114" key="Vcs.Push.Dialog.v2" timestamp="1637182594135">
-      <screen x="0" y="23" width="1280" height="733" />
-    </state>
-    <state x="273" y="114" key="Vcs.Push.Dialog.v2/0.23.1280.733@0.23.1280.733" timestamp="1637182594135" />
-    <state x="273" y="114" key="Vcs.Push.Dialog.v2/0.23.1280.734@0.23.1280.734" timestamp="1637182143920" />
-    <state x="0" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1641063288898">
-      <screen x="0" y="23" width="1280" height="732" />
-    </state>
-    <state x="0" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.732@0.23.1280.732" timestamp="1641063288898" />
   </component>
 </project>

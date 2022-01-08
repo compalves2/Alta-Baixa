@@ -83,18 +83,20 @@ ul {
     display: flex;
     font-family: "Azeret";
     padding: 0;
+    flex-wrap: wrap;
 }
 
-a {
+ul a {
     text-decoration: none;
     color: #000000;
+    white-space: nowrap;
 }
 
 a:hover {
     font-weight: bold;
 }
 
-ul li{
+ul li {
     margin-right: 0.8vw;
 }
 
@@ -120,6 +122,7 @@ main img {
 .sub-side_num {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .sub-side_num p {
@@ -128,7 +131,7 @@ main img {
 
 .side {
     display: flex;
-    min-width: 18%;
+    max-width: 13%;
     flex-direction: column;
     justify-content: space-between;
     height: 95vh;
@@ -341,33 +344,41 @@ p {
     line-height: 1.5em;
 }
 
-.texto{
-    width:100%;
+.texto {
+    width: 100%;
     margin-top: 20vh;
 }
 
-.artigo_conteudo{
+.artigo_conteudo {
     width: 95%;
     margin: 0 auto;
 }
 
-.titulo img{
+.titulo img {
     width: auto;
     height: 20em;
 }
 
-.texto{
+.texto {
     margin-bottom: 10vh;
 }
 
-.morada{
+.morada {
     position: absolute;
     line-height: 1.4vw !important;
     font-size: 1vw !important;
 }
 
-.artigo .texto *{
-    margin:0;
+.artigo .texto * {
+    margin: 0;
+}
+
+.artigo .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    position: relative;
 }
 
 /*ARTIGO 1*/
@@ -381,36 +392,25 @@ p {
     overflow-x: hidden;
 }
 
-#artigo_1 .titulo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5vh;
-    position: relative;
-}
-
-#artigo_1 .morada{
+#artigo_1 .morada {
     top: 84%;
     left: 80%;
 }
 
 
-
-
-
-#artigo_1 .texto p:first-child{
+#artigo_1 .texto p:first-child {
     width: 50%;
     padding-left: 50%;
     margin-bottom: 5vh;
 }
 
-#artigo_1 .texto h3{
-    width:70%;
+#artigo_1 .texto h3 {
+    width: 70%;
     padding-left: 20%;
     margin-bottom: 5vh;
 }
 
-#artigo_1 .texto p:last-child{
+#artigo_1 .texto p:last-child {
     width: 70%;
     padding-left: 20%;
     margin-bottom: 5vh;
@@ -419,8 +419,6 @@ p {
 
 
 /*Artigo 2*/
-
-
 #artigo_2 {
     background-color: white;
     position: absolute;
@@ -429,69 +427,25 @@ p {
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
-
 }
 
-#artigo_2 .titulo {
-    width: 100%;
-    height: auto;
-    margin-top: -7%;
-    margin-left: 0.8%;
-    animation-duration: 3s;
-    animation-name: transicao_2;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+#artigo_2 .morada {
+    top: 73.5%;
+    left: 73%;
 }
 
-#artigo_2 p {
-    color: lightgray;
-    font-size: 1.3em;
-    line-height: 1.5em;
-    animation-duration: 3s;
-    animation-name: texto_artigo;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    margin-bottom: 10%;
+#artigo_2 .texto p:first-child {
+    width: 50%;
+    margin-bottom: 5vh;
 }
 
-#artigo_2 .titulo h1 {
-    font-size: 9em;
-    animation-duration: 3s;
-    animation-name: transicao_texto_2;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
-#artigo_2 .efeito {
-    margin-top: -10%;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#artigo_2 .efeito p:first-child {
-    width: 70%;
-    text-align: end;
-    margin-left: auto;
-
-}
-
-#artigo_2 .efeito p:last-child {
+#artigo_2 .texto h3 {
     width: 60%;
-
+    padding-left: 30%;
+    margin-bottom: 5vh;
 }
-
-#artigo_2 img {
-    width: 150px;
-    animation-name: transicao_numero2;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
 
 /*Artigo 3*/
-
-
 #artigo_3 {
     background-color: #b42537;
     position: absolute;
@@ -537,13 +491,6 @@ p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
-
-#artigo_2 .efeito p:first-child {
-    width: 70%;
-    text-align: end;
-    margin-left: auto;
-
 }
 
 #artigo_3 .efeito p:last-child {
@@ -1369,6 +1316,7 @@ p {
     0% {
         color: lightgray;
     }
+
     100% {
         color: black;
     }
@@ -1379,6 +1327,7 @@ p {
     0% {
         color: #b42537;
     }
+
     100% {
         color: black;
     }
@@ -1389,6 +1338,7 @@ p {
     0% {
         color: white;
     }
+
     100% {
         color: black;
     }
@@ -1398,6 +1348,7 @@ p {
     0% {
         color: lightgray;
     }
+
     100% {
         color: black;
     }
@@ -1408,6 +1359,7 @@ p {
     0% {
         width: 100%;
     }
+
     100% {
         height: 40%;
         width: 70%;
@@ -1635,6 +1587,7 @@ p {
     0% {
         width: 90%;
     }
+
     100% {
         width: 60%;
         height: 40%;
@@ -1643,15 +1596,15 @@ p {
 
 
 /*cubo*/
-.container {
-    height: 20px;
-    perspective: 1000px;
-    margin-bottom: 0.3em;
-
-}
-
-.container p {
+.edicao.container {
+    width: 12%;
+    height: 6vw;
     font-family: "Azeret";
+    perspective: none;
+    font-size: 5.5vw;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .cube {
@@ -1659,29 +1612,53 @@ p {
     width: 100%;
     height: 100%;
     position: relative;
-
 }
 
 .face {
     position: absolute;
     width: 100%;
+    height: 1em;
+    background-color: transparent;
+}
+
+.edicao .top {
+    transform: rotateX(90deg) translateZ(3vw);
+    font-size: 1em;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.edicao .front {
+    transform: rotateX(0deg) translateZ(3vw);
+    font-size: 1em;
+    height: 100%;
+}
+
+/*cubo pequeno*/
+
+.container {
+    width: 3em;
+    height: 1.2em;
+    font-family: "Azeret";
+    perspective: none;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .top {
-    transform: rotateX(90deg) translateZ(1px);
+    transform: rotateX(90deg) translateZ(0.6em);
     font-size: 1em;
+    height: 100%;
 }
 
 .front {
-    transform: rotateX(0deg) translateZ(1px);
+    transform: rotateX(0deg) translateZ(0.6em);
     font-size: 1em;
+    height: 100%;
 }
 
-.logo p{
+/* ---- */
+
+.logo p {
     font-size: 100% !important;
 }
 
@@ -1757,36 +1734,36 @@ p {
     top: 0;
 }
 
-.footer_typem{
+.footer_typem {
     position: relative;
     margin-bottom: 30vh;
 }
 
-.footer_13{
+.footer_13 {
     position: relative;
     margin-bottom: 20vh;
 }
 
-.footer_13 img{
+.footer_13 img {
     width: 3vw;
     position: absolute;
-    top:0;
+    top: 0;
     right: 2vw;
 }
 
-.footer_typem img{
+.footer_typem img {
     width: 3vw;
     position: absolute;
-    top:0;
+    top: 0;
     right: 2vw;
 }
 
-.footer_13 img:hover{
+.footer_13 img:hover {
     cursor: pointer;
 }
 
 
-.footer_typem img:hover{
+.footer_typem img:hover {
     cursor: pointer;
 }
 
@@ -2015,13 +1992,14 @@ h2 {
     margin-top: 2em;
     position: relative;
     text-align: center;
-    margin-bottom:35vh;
+    margin-bottom: 35vh;
 }
 
-#intro_emo_1{
-top:0;
+#intro_emo_1 {
+    top: 0;
     left: 0;
 }
+
 #intro_emo_2 {
     position: absolute;
     top: 0%;
@@ -2034,10 +2012,11 @@ top:0;
     margin: 0;
 }
 
-#intro_emo_div{
-    top:23%;
+#intro_emo_div {
+    top: 23%;
     left: 0;
 }
+
 #intro_emo_3 {
     position: absolute;
     top: 46%;
@@ -2062,39 +2041,39 @@ top:0;
     left: 100%;
 }
 
-#img_seta img{
+#img_seta img {
     position: absolute;
     width: 90%;
     transform: translate(-50%, 0%);
     z-index: 2;
-    left:50%;
+    left: 50%;
     transform-origin: center;
 }
 
-.seta_2{
-    top:0;
-    left:0;
+.seta_2 {
+    top: 0;
+    left: 0;
     position: absolute;
-    width:50%;
+    width: 50%;
     z-index: -1;
 }
 
-.mais{
+.mais {
     position: absolute;
-    top:0;
-    left:50%;
-    width:23vw !important;
+    top: 0;
+    left: 50%;
+    width: 23vw !important;
 }
 
-.menos{
+.menos {
     position: absolute;
-    top:65%;
-    left:10%;
-    width:23vw !important;
+    top: 65%;
+    left: 10%;
+    width: 23vw !important;
 }
 
 
-.titulo_workflow{
+.titulo_workflow {
     position: relative;
     z-index: 1;
 }
@@ -2161,30 +2140,30 @@ top:0;
 
 /*6 emotions*/
 .emotions_6 {
-    width:80vw;
+    width: 80vw;
     margin: 0 auto;
     position: relative;
 }
 
-.emotion{
+.emotion {
     width: 100%;
     margin-top: 20vh;
     margin-bottom: 20vh;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 1em;
     align-items: center;
 }
 
-.emotion div *{
-width:10%;
+.emotion div * {
+    width: 10%;
 }
 
-.col1-12{
+.col1-12 {
     grid-column: 1/12;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
 }
@@ -2195,76 +2174,73 @@ width:10%;
     font-size: 0.895vw !important;
 }
 
-.Autores_typem{
+.Autores_typem {}
 
-}
-.Autores_typem_2{
-display: flex;
+.Autores_typem_2 {
+    display: flex;
     justify-content: space-between;
 }
-.Autores_typem_3{
+
+.Autores_typem_3 {
     display: flex;
     justify-content: space-between;
 }
 
 
-.Autores_typem_5{
-margin-left: 30%;
+.Autores_typem_5 {
+    margin-left: 30%;
 }
 
-.Autores_typem_4{
+.Autores_typem_4 {
     display: flex;
     justify-content: space-between;
 }
 
-.Autores_typem_7{
+.Autores_typem_7 {
     display: flex;
     justify-content: space-between;
 }
 
-.titulo_artigo_2 div{
-text-align: left;
+.titulo_artigo_2 div {
+    text-align: left;
 }
 
-#title_emotion_1{
-    position:absolute;
+#title_emotion_1 {
+    position: absolute;
     top: 0;
     left: 0;
 }
 
-#title_emotion_2{
-    position:absolute;
+#title_emotion_2 {
+    position: absolute;
     top: 21.5%;
     right: 0;
 }
 
-#title_emotion_3{
-    position:absolute;
+#title_emotion_3 {
+    position: absolute;
     top: 37.7%;
     left: 0;
 }
 
-#title_emotion_4{
-    position:absolute;
+#title_emotion_4 {
+    position: absolute;
     top: 50%;
     right: 0;
 }
 
-#title_emotion_5{
-    position:absolute;
+#title_emotion_5 {
+    position: absolute;
     top: 68%;
     right: 17vw;
 }
 
-#title_emotion_6{
-    position:absolute;
+#title_emotion_6 {
+    position: absolute;
     top: 93.3%;
     right: 0;
 }
 
-.artigo_1_intro{
+.artigo_1_intro {
     margin-top: 28vh;
 }
-
-
-
