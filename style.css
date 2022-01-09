@@ -75,6 +75,7 @@ h1 {
     cursor:default;
 }
 
+
 .sub-side_num .front:hover{
     cursor:default;
 }
@@ -170,18 +171,11 @@ main img {
     align-items: flex-end;
 }
 
-.edicao h1 {
-    margin: 0;
-    font-size: 5.5em;
-    margin-left: 1em;
-    font-family: "Acumin Variable Concept";
-    margin-bottom: 10px;
-}
 
 .side_right {
     display: flex;
     margin-top: 2em;
-    min-width: 65%;
+    width:87%;
     justify-content: space-between;
 }
 
@@ -201,6 +195,10 @@ main img {
 
 .hide {
     color: transparent;
+}
+
+.titulo{
+    padding-top:2%;
 }
 
 .hide:hover {
@@ -314,6 +312,8 @@ p {
     width: auto;
     height: 20em;
 }
+
+
 
 .texto {
     margin-bottom: 10vh;
