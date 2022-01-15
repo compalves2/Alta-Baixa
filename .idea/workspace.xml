@@ -30,11 +30,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Alta-Baixa-main/Alta-Baixa-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paisl\Desktop\uni\Mestrado\Desenvolvimento Web\projeto\Alta-Baixa\data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Alta&amp;Baixa" />
     </key>
@@ -84,6 +87,11 @@
       <workItem from="1641725760487" duration="156000" />
       <workItem from="1641746169528" duration="3369000" />
       <workItem from="1641770861659" duration="102000" />
+      <workItem from="1641991380101" duration="10000" />
+      <workItem from="1642070126623" duration="52000" />
+      <workItem from="1642087267007" duration="2385000" />
+      <workItem from="1642095958238" duration="5000" />
+      <workItem from="1642243606532" duration="2078000" />
     </task>
     <servers />
   </component>

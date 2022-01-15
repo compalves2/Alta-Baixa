@@ -195,6 +195,7 @@ main img {
 
 .hide {
     color: transparent;
+    transition: color 0.6s ease-in-out;
 }
 
 .titulo{
@@ -203,7 +204,6 @@ main img {
 
 .hide:hover {
     color: black;
-    transition: color 0.6s ease-in-out;
 }
 
 /*ARTIGO 1*/
@@ -1407,3 +1407,5 @@ h2 {
 .artigo_1_intro {
     margin-top: 28vh;
 }
+
+
