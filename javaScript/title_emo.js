@@ -6,7 +6,7 @@ var element_emo_5 =document.getElementById("intro_emo_5");
 var element_emo_6 =document.getElementById("intro_emo_6");
 var elemento_about=document.getElementById("about");
 
-function move(){
+/*function move(){
     if(elemento_about.style.right==0){
         elemento_about.addEventListener("click", function() {
         elemento_about.style.right = -55+"vh";
@@ -17,7 +17,23 @@ function move(){
     })}
 
 }
+move();*/
+
+
+function move(){
+    if(elemento_about.style.transform="translateX(0)"){
+        elemento_about.addEventListener("click", function() {
+            elemento_about.style.transform ="translateX(55vh)";
+        })} else
+    if(elemento_about.style.transform="translateX(55vh)"){
+        elemento_about.addEventListener("click", function() {
+            elemento_about.style.transform="translateX(0)";
+        })}
+}
 move();
+
+
+
 
 function state1(){
     element_emo_4.style.left="calc("+element_emo_3.clientWidth+"px + 2%)";

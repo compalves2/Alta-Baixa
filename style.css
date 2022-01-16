@@ -1414,8 +1414,8 @@ width: 60vh;
 height: 70vh;
 top:15vh;
 right: 0;
+transform: translateX(0);
 padding-top: 25px;
-    animation-name: about;
 }
 
 
