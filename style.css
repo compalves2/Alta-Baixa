@@ -1408,4 +1408,31 @@ h2 {
     margin-top: 28vh;
 }
 
+#about{position: absolute;
+background-color: #b42537;
+width: 60vh;
+height: 70vh;
+top:15vh;
+right: 0;
+    padding-top: 25px;
+
+
+}
+
+#about_texto{width: 80%;
+    height: 90%;
+margin-right: auto;
+margin-left: auto;
+margin-top: auto;
+margin-bottom: auto;
+    overflow-y: scroll;
+}
+
+#about_texto::-webkit-scrollbar {-ms-overflow-style: none;
+scrollbar-width: none;}
+
+#about_texto::-webkit-scrollbar {
+display: none;
+}
+
 
